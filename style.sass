@@ -1,0 +1,528 @@
+@import normalize
+@import compass
+@import fonts
+
+$tisa: 'ff-tisa-web-pro'
+$dark: #454B54
+$blue: #12679C
+$orange: #FF8E2E
+$light-orange: #FFFACB
+$orange-text: #FF7600
+*
+  -webkit-font-smoothing: antialiased!important
+  @include box-sizing(border-box)
+
+@mixin noselect
+  -webkit-touch-callout: none
+  -webkit-user-select: none
+  -khtml-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+
+
+body
+  font-family: 'avenir-roman'
+  color: $dark
+
+strong
+  font-family: 'avenir-black'
+  font-weight: 700
+
+  em
+    font-family: 'avenir-blackoblique'
+    font-weight: 700
+
+em
+  font-family: 'avenir-oblique'
+  font-weight: 400
+
+  strong
+    font-family: 'avenir-blackoblique'
+    font-weight: 700
+
+a
+  text-decoration: none
+  color: $blue
+
+.restrict
+  max-width: 100%
+  width: 1140px
+  margin: auto auto
+  padding: 0px 30px
+
+
+form
+
+  input[type="text"], input[type="search"]
+    box-sizing: border-box!important
+    background: #fff
+    border: 1px solid #FFBB79
+    height: 27px
+    margin-right: -6px
+    font-family: 'avenir-medium'
+    color: $dark
+    font-size: .85rem
+    padding-left: 5px
+    padding-top: 3px
+    letter-spacing: .5px
+
+    &:focus
+      border-color: darken(#FFBB79, 8%)
+      outline: 0px
+
+  input[type="submit"], button[type="submit"]
+    height: 27px
+    border: 0px
+    background: #FF8A1D
+    color: #fff
+    text-transform: uppercase
+    font-family: 'avenir-black'
+    font-size: .7rem
+    letter-spacing: 1.5px
+    position: relative
+    top: -3px
+
+    &:after
+      content: "\e901"
+      font-family: 'icomoon'
+      position: relative
+      top: 1px
+
+header[role="banner"]
+  @include pie-clearfix
+
+  .restrict
+    position: relative
+
+  .subscribe-bar
+    @include pie-clearfix
+    background: $light-orange
+    border-bottom: 1px solid darken($light-orange, 16%)
+    color: $orange-text
+    height: 40px
+    overflow: hidden
+    margin-bottom: 15px
+
+    h1
+      padding: 0
+      display: inline-block
+      font-size: .7rem
+      letter-spacing: 1.5px
+      text-transform: uppercase
+      margin-top: 14px
+      margin-left: 8px
+      font-family: 'avenir-light'
+
+    i
+      position: relative
+      font-size: 1.5rem
+      top: 6px
+    
+    p
+      float: right
+      margin-right: 15px
+      font-size: .8rem
+      em
+        font-family: 'avenir-mediumoblique'
+
+
+    form
+      float: right
+      margin-top: 6px
+
+
+  .graph-bg
+    width: 1136px
+    height: 696px
+    background: url('img/graph-bg.png') no-repeat
+    background-size: 100% 100%
+    position: absolute
+    z-index: -1
+    left: -335px
+    top: -70px
+  
+  .branding
+    float: left
+
+  a
+    color: $dark
+    &:hover
+      color: $blue
+
+  p.tagline
+    color: #72A4AD
+    font-family: 'avenir-medium' 
+    font-size: .9rem
+    margin: 0
+    margin-top: 10px
+
+
+  .logo 
+    display: inline-block
+
+    a
+      display: block
+  
+    h1
+      margin: 0
+      color: $blue
+      font-family: $tisa
+      letter-spacing: -.75px
+      font-size: 1.4rem
+
+  .header-search
+    position: relative
+    top: 2px
+    float: right
+    margin-left: 20px
+
+    *
+      @include noselect
+    
+    a
+      cursor: pointer
+
+    &.open
+      form
+        top: 35px
+        opacity: 1
+        visibility: visible
+
+    i, form
+      display: inline-block
+
+    form
+      @include transition(all .1s)
+      position: absolute
+      top: 25px
+      right: 0
+      width: 175px
+      z-index: -1px
+      visibility: hidden
+      opacity: 0
+
+      input[type="search"]
+        width: 130px
+      button[type="submit"]
+
+    i
+      font-size: 1.1rem
+
+  nav
+    float: right
+
+    ul
+      margin: 0
+      padding: 0
+      
+    li
+      list-style: none
+      display: inline-block
+
+    a
+      font-family: $tisa
+      font-weight: 700
+      color: $dark
+      padding-left: 20px
+      font-size: .925rem
+
+
+aside.sidebar
+  @include transition(all .4s)
+  width: 280px
+  float: left
+  margin-top: 25px
+  font-size: .9rem
+  line-height: 1.5
+  color: lighten(#6E7174, 10%)
+  visibility: visible
+  position: relative
+  opacity: 1
+  top: 0
+
+  &.hide
+    opacity: 0
+    visibility: hidden
+    top: -20px
+
+  div[class^="widget_"], div[class*=" widget_"]
+    margin-bottom: 35px
+
+  form
+    margin-top: 15px
+
+  ul
+    margin: 0
+    padding: 0
+
+    li
+      list-style: none
+
+      a
+        color: #6E7174
+        &:hover
+          color: $blue
+  
+  h3
+    font-size: .95rem
+    margin: 10px 0
+    font-family: $tisa
+    color: $blue
+
+  #text-3 h3
+    font-size: 1.1rem
+    margin: 15px 0
+
+  img.headshot
+    margin-left: -4px
+
+  ul.social
+
+    li
+      display: inline-block
+      margin-right: 10px
+
+    a
+      color: $dark
+    i
+      font-size: 1.2rem
+
+main[role="main"]
+  float: right
+  width: calc(100% - 280px)
+  padding-left: 50px
+
+article
+  margin-bottom: 60px
+  @include pie-clearfix
+
+  span.date
+    font-family: 'avenir-black'
+    font-size: .9rem
+    margin-right: 25px
+
+  ul.post-sharing
+    display: inline-block
+    margin: 0
+    padding: 0
+    
+    li   
+      list-style: none
+      display: inline-block
+      margin-right: 15px
+
+      span
+        font-family: 'avenir-medium'
+        opacity: .75
+        font-size: .9rem
+        position: relative
+        top: -1px
+
+      i
+        font-size: 1.1rem
+      
+      a
+        color: $dark
+  
+h2.post-title
+  font-family: $tisa
+  font-size: 2.8rem
+  margin-top: 10px
+  line-height: 1.2
+  color: #FF8E2E
+
+  a
+    color: #FF8E2E
+
+.post-edit-link 
+  color: $blue
+  float: right
+  text-decoration: underline
+  font-size: .8rem
+  opacity: .6
+
+div.entry-content
+  line-height: 1.55
+  font-size: 1.05rem
+  position: relative
+
+  padding-right: 160px
+  img.alignright
+    margin-right: -160px
+
+  a.more-link 
+    @include transition(all .1s)
+    margin-top: 15px
+    display: inline-block
+    padding: 4px 8px
+    background: #FFE8A3
+    color: $orange-text
+    text-transform: uppercase
+    font-family: 'avenir-black'
+    font-size: .7rem
+    letter-spacing: 1.5px
+    text-decoration: none
+    @include box-shadow(14px 0 0 rgba(255,255,255,1))
+
+    &:hover
+      background: $orange
+      color: #fff
+
+      &:after
+        padding-left: 12px
+
+    &:before
+      display: block
+      content: ''
+      width: 100%
+      z-index: -1
+      height: 1px
+      background: #D1D8DC
+      position: absolute
+      margin-top: 8px
+
+    &:after
+      @include transition(all .2s)
+      content: "\e901"
+      font-family: 'icomoon'
+      position: relative
+      top: 1px
+      padding-left: 8px
+    
+    
+
+
+  img.alignright
+    float: right
+    margin-left: 30px
+    margin-bottom: 25px
+
+  img.alignleft
+    float: left
+    margin-right: 30px
+    margin-bottom: 25px
+
+.content-wrapper
+  @include pie-clearfix
+
+footer
+  width: 100%
+  @include pie-clearfix
+
+
+div.pagination
+  background: #F0F6F7
+  position: relative
+  text-align: center
+  height: 30px
+  padding-top: 4px
+  
+  a, span
+    color: $dark
+    font-size: .8rem
+
+  a
+    font-family: 'avenir-black'
+
+  span
+    font-family: 'avenir-roman'
+
+  a.page-numbers
+    padding: 0 6px
+
+    &:hover
+      color: $blue
+
+  a.next, a.prev
+    @include transition(all .2s)
+    display: block
+    position: absolute
+    padding: 8px 10px
+    top: 0
+    height: 100% 
+    background: #FFE8A3
+    color: $orange-text
+    text-transform: uppercase
+    font-family: 'avenir-black'
+    font-size: .7rem
+    letter-spacing: 1.5px
+
+    &:hover
+      background: $orange
+      color: #fff
+
+  a.next
+    right: 0
+    &:after
+      content: "\e901"
+      font-family: 'icomoon'
+      position: relative
+      top: 1px
+      padding-left: 8px
+
+  a.prev
+    left: 0
+    &:before
+      @include transform(rotate(180deg))
+      display: inline-block
+      content: "\e901"
+      font-family: 'icomoon'
+      position: relative
+      padding-left: 8px
+      top: 1px
+
+
+ul.vertical-social
+  @include transition(all .2s)
+  background: #fff
+  margin: 0
+  padding: 30px 0px 0px 
+  width: 80px
+  text-align: center
+  border: 1px solid #ddd
+  border-radius: 4px
+  position: fixed
+  top: 30px
+  visibility: hidden
+  z-index: 999
+  opacity: 0
+  margin-top: -10px
+
+  &.show
+    visibility: visible
+    opacity: 1
+    margin-top: 0
+
+  &:before
+    position: absolute
+    display: block
+    content: 'Share'
+    height: 17px
+    left: -1px
+    right: -1px
+    top: -1px
+    border-radius: 3px 3px 0 0 
+    border: 1px solid darken($light-orange, 20%)
+    background: $light-orange
+    font-family: 'avenir-black'
+    letter-spacing: 1.5px
+    text-transform: uppercase
+    color: $orange-text
+    font-size: .7rem
+    padding-top: 5px
+
+  li
+    list-style: none
+    width: 100%
+    clear: both
+    display: block
+    padding: 13px 0
+    border-top: 1px solid #ddd
+
+    &:first-child
+      border-top: 0px
+
+h3.orange
+  font-family: $tisa
+  color: $orange
