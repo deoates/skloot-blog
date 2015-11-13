@@ -8,7 +8,7 @@
     });
     if ($('body').hasClass('single')) {
       $(window).scroll(function(e) {
-        if ($(window).scrollTop() >= contentOffset.top - 30) {
+        if ($(window).scrollTop() >= contentOffset.top - 85.) {
           $('aside.sidebar').addClass('hide');
           return $('.vertical-social').addClass('show');
         } else {

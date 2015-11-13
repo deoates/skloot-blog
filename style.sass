@@ -302,6 +302,65 @@ main[role="main"]
 article
   margin-bottom: 60px
   @include pie-clearfix
+  clear: both
+  position: relative
+
+  &:nth-child(3n-1)
+    padding-left: 0!important
+    padding-right: 25px
+
+  &:not([full-width])
+    width: 50%
+    float: left
+    clear: none!important
+    padding-left: 25px
+
+    .pcc
+      @include pie-clearfix
+      display: block
+      height: 400px
+      overflow: hidden
+      position: relative
+
+      a.more-link
+        display: none
+
+      &:after
+        @include background-image(linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%))
+        content: ''
+        position: absolute
+        height: 100px
+        width: 100%
+        bottom: 0
+
+    a.more-link
+      &:before
+        width: 90%
+
+    span.date
+      font-size: .8rem
+
+    ul.post-sharing i
+      font-size: .9rem
+
+    div.entry-content
+      padding: 0
+
+    h2.post-title
+      font-size: 1.8rem
+  
+    p
+      font-size: 1rem
+
+    img
+      display: none
+
+  &:nth-of-type(2)
+    padding-right: 24px
+
+  &:nth-of-type(3)
+    padding-left: 24px
+
 
   span.date
     font-family: 'avenir-black'
@@ -326,7 +385,7 @@ article
         top: -1px
 
       i
-        font-size: 1.1rem
+        font-size: 1rem
       
       a
         color: $dark
@@ -343,12 +402,44 @@ h2.post-title
   a
     color: #FF8E2E
 
-.post-edit-link 
-  color: $blue
-  float: right
-  text-decoration: underline
-  font-size: .8rem
-  opacity: .6
+a.more-link
+  @include transition(all .1s)
+  margin-top: 15px
+  display: inline-block
+  padding: 4px 8px
+  background: #FFE8A3
+  color: $orange-text
+  text-transform: uppercase
+  font-family: 'avenir-black'
+  font-size: .7rem
+  letter-spacing: 1.5px
+  text-decoration: none
+  @include box-shadow(14px 0 0 rgba(255,255,255,1))
+
+  &:hover
+    background: $orange
+    color: #fff
+
+    &:after
+      padding-left: 12px
+
+  &:before
+    display: block
+    content: ''
+    width: 100%
+    z-index: -1
+    height: 1px
+    background: #D1D8DC
+    position: absolute
+    margin-top: 8px
+
+  &:after
+    @include transition(all .2s)
+    content: "\e901"
+    font-family: 'icomoon'
+    position: relative
+    top: 1px
+    padding-left: 8px
 
 div.entry-content
   line-height: 1.55
@@ -359,44 +450,6 @@ div.entry-content
   img.alignright
     margin-right: -160px
 
-  a.more-link 
-    @include transition(all .1s)
-    margin-top: 15px
-    display: inline-block
-    padding: 4px 8px
-    background: #FFE8A3
-    color: $orange-text
-    text-transform: uppercase
-    font-family: 'avenir-black'
-    font-size: .7rem
-    letter-spacing: 1.5px
-    text-decoration: none
-    @include box-shadow(14px 0 0 rgba(255,255,255,1))
-
-    &:hover
-      background: $orange
-      color: #fff
-
-      &:after
-        padding-left: 12px
-
-    &:before
-      display: block
-      content: ''
-      width: 100%
-      z-index: -1
-      height: 1px
-      background: #D1D8DC
-      position: absolute
-      margin-top: 8px
-
-    &:after
-      @include transition(all .2s)
-      content: "\e901"
-      font-family: 'icomoon'
-      position: relative
-      top: 1px
-      padding-left: 8px
     
     
 
@@ -431,6 +484,7 @@ div.pagination
   text-align: center
   height: 30px
   padding-top: 4px
+  clear: both
   
   a, span
     color: $dark
@@ -486,7 +540,6 @@ div.pagination
       padding-left: 8px
       top: 1px
 
-
 ul.vertical-social
   @include transition(all .2s)
   background: #fff
@@ -497,7 +550,7 @@ ul.vertical-social
   border: 1px solid #ddd
   border-radius: 4px
   position: fixed
-  top: 30px
+  top: 75px
   visibility: hidden
   z-index: 999
   opacity: 0

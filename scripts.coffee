@@ -1,4 +1,5 @@
 $ ->
+
   contentOffset = $('div.entry-content').offset()
 
   $('.vertical-social').css
@@ -6,7 +7,7 @@ $ ->
 
   if $('body').hasClass('single')
     $(window).scroll (e) ->
-      if $(window).scrollTop() >= contentOffset.top - 30
+      if $(window).scrollTop() >= contentOffset.top - (85)
         $('aside.sidebar').addClass 'hide'
         $('.vertical-social').addClass 'show'
       else
@@ -16,3 +17,4 @@ $ ->
   $('a[data-href="show-search"]').click (e) ->
     do e.preventDefault
     $('.header-search').toggleClass 'open'
+

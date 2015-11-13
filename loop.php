@@ -1,42 +1,41 @@
 <?php if (have_posts()): while (have_posts()) : the_post(); ?>
+  <?php $half = ($wp_query->current_post % 3 != 0); ?>
 
-	<!-- article -->
-	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+  <article <?php if (!$half) { echo "full-width"; } ?> id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-		<?php edit_post_link('Edit this post'); ?>
+    <?php if ($half) { ?> 
+      <div class="pcc"> 
+    <?php } ?>
 
-		<!-- post thumbnail -->
-		<?php if ( has_post_thumbnail()) : // Check if thumbnail exists ?>
-			<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-				<?php the_post_thumbnail(array(120,120)); // Declare pixel size you need inside the array ?>
-			</a>
-		<?php endif; ?>
-		<!-- /post thumbnail -->
+      <?php if ( has_post_thumbnail()) : // Check if thumbnail exists ?>
+        <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+          <?php the_post_thumbnail(array(120,120)); // Declare pixel size you need inside the array ?>
+        </a>
+      <?php endif; ?>
 
-		<!-- post details -->
-		<span class="date">
-			<time datetime="<?php the_time('Y-m-d'); ?> <?php the_time('H:i'); ?>">
-				<?php the_date(); ?><!-- <?php the_time(); ?> -->
-			</time>
-    </span>
-    <?php include 'post-sharing.php'; ?>
+      <span class="date">
+        <time datetime="<?php the_time('Y-m-d'); ?> <?php the_time('H:i'); ?>">
+          <?php the_date(); ?><!-- <?php the_time(); ?> -->
+        </time>
+      </span>
 
-		<!-- post title -->
-		<h2 class="post-title">
-			<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
-		</h2>
-		<!-- /post title -->
+      <?php include 'post-sharing.php'; ?>
 
-		<!--<span class="author"><?php _e( 'Published by', 'html5blank' ); ?> <?php the_author_posts_link(); ?></span>-->
+      <h2 class="post-title">
+        <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
+      </h2>
 
-		<?php //html5wp_excerpt('html5wp_index'); // Build your custom callback length in functions.php ?>
-    <div class="entry-content digest">
-      <?php the_content('Keep Reading'); ?>
-    </div>
-    
+      <?php //html5wp_excerpt('html5wp_index'); // Build your custom callback length in functions.php ?>
+      <div class="entry-content digest">
+        <?php the_content('Keep Reading'); ?>
+      </div>
 
-	</article>
-	<!-- /article -->
+    <?php if ($half) { ?> 
+      </div><!-- pcc -->
+      <a class="more-link" href="<?php the_permalink(); ?>">Keep Reading</a>
+    <?php  }  ?>
+
+  </article>
 
 <?php endwhile; ?>
 
