@@ -781,8 +781,12 @@ article ul.post-sharing li i {
 article ul.post-sharing li a {
   color: #454B54;
 }
+/* line 327, style.sass */
+article ul.post-sharing li a:hover {
+  color: #12679C;
+}
 
-/* line 328, style.sass */
+/* line 330, style.sass */
 h2.post-title {
   font-family: "ff-tisa-web-pro";
   font-size: 2.8rem;
@@ -790,12 +794,12 @@ h2.post-title {
   line-height: 1.2;
   color: #FF8E2E;
 }
-/* line 335, style.sass */
+/* line 337, style.sass */
 h2.post-title a {
   color: #FF8E2E;
 }
 
-/* line 338, style.sass */
+/* line 340, style.sass */
 .post-edit-link {
   color: #12679C;
   float: right;
@@ -804,18 +808,18 @@ h2.post-title a {
   opacity: 0.6;
 }
 
-/* line 345, style.sass */
+/* line 347, style.sass */
 div.entry-content {
   line-height: 1.55;
   font-size: 1.05rem;
   position: relative;
   padding-right: 160px;
 }
-/* line 351, style.sass */
+/* line 353, style.sass */
 div.entry-content img.alignright {
   margin-right: -160px;
 }
-/* line 354, style.sass */
+/* line 356, style.sass */
 div.entry-content a.more-link {
   -moz-transition: all 0.1s;
   -o-transition: all 0.1s;
@@ -835,16 +839,16 @@ div.entry-content a.more-link {
   -webkit-box-shadow: 14px 0 0 white;
   box-shadow: 14px 0 0 white;
 }
-/* line 368, style.sass */
+/* line 370, style.sass */
 div.entry-content a.more-link:hover {
   background: #FF8E2E;
   color: #fff;
 }
-/* line 372, style.sass */
+/* line 374, style.sass */
 div.entry-content a.more-link:hover:after {
   padding-left: 12px;
 }
-/* line 375, style.sass */
+/* line 377, style.sass */
 div.entry-content a.more-link:before {
   display: block;
   content: "";
@@ -855,7 +859,7 @@ div.entry-content a.more-link:before {
   position: absolute;
   margin-top: 8px;
 }
-/* line 385, style.sass */
+/* line 387, style.sass */
 div.entry-content a.more-link:after {
   -moz-transition: all 0.2s;
   -o-transition: all 0.2s;
@@ -867,20 +871,20 @@ div.entry-content a.more-link:after {
   top: 1px;
   padding-left: 8px;
 }
-/* line 396, style.sass */
+/* line 398, style.sass */
 div.entry-content img.alignright {
   float: right;
   margin-left: 30px;
   margin-bottom: 25px;
 }
-/* line 401, style.sass */
+/* line 403, style.sass */
 div.entry-content img.alignleft {
   float: left;
   margin-right: 30px;
   margin-bottom: 25px;
 }
 
-/* line 406, style.sass */
+/* line 408, style.sass */
 .content-wrapper {
   *zoom: 1;
 }
@@ -891,7 +895,7 @@ div.entry-content img.alignleft {
   clear: both;
 }
 
-/* line 409, style.sass */
+/* line 411, style.sass */
 footer {
   width: 100%;
   *zoom: 1;
@@ -903,7 +907,7 @@ footer:after {
   clear: both;
 }
 
-/* line 414, style.sass */
+/* line 416, style.sass */
 div.pagination {
   background: #F0F6F7;
   position: relative;
@@ -911,28 +915,28 @@ div.pagination {
   height: 30px;
   padding-top: 4px;
 }
-/* line 421, style.sass */
+/* line 423, style.sass */
 div.pagination a, div.pagination span {
   color: #454B54;
   font-size: 0.8rem;
 }
-/* line 425, style.sass */
+/* line 427, style.sass */
 div.pagination a {
   font-family: "avenir-black";
 }
-/* line 428, style.sass */
+/* line 430, style.sass */
 div.pagination span {
   font-family: "avenir-roman";
 }
-/* line 431, style.sass */
+/* line 433, style.sass */
 div.pagination a.page-numbers {
   padding: 0 6px;
 }
-/* line 434, style.sass */
+/* line 436, style.sass */
 div.pagination a.page-numbers:hover {
   color: #12679C;
 }
-/* line 437, style.sass */
+/* line 439, style.sass */
 div.pagination a.next, div.pagination a.prev {
   -moz-transition: all 0.2s;
   -o-transition: all 0.2s;
@@ -950,16 +954,16 @@ div.pagination a.next, div.pagination a.prev {
   font-size: 0.7rem;
   letter-spacing: 1.5px;
 }
-/* line 451, style.sass */
+/* line 453, style.sass */
 div.pagination a.next:hover, div.pagination a.prev:hover {
   background: #FF8E2E;
   color: #fff;
 }
-/* line 455, style.sass */
+/* line 457, style.sass */
 div.pagination a.next {
   right: 0;
 }
-/* line 457, style.sass */
+/* line 459, style.sass */
 div.pagination a.next:after {
   content: "";
   font-family: "icomoon";
@@ -967,11 +971,11 @@ div.pagination a.next:after {
   top: 1px;
   padding-left: 8px;
 }
-/* line 464, style.sass */
+/* line 466, style.sass */
 div.pagination a.prev {
   left: 0;
 }
-/* line 466, style.sass */
+/* line 468, style.sass */
 div.pagination a.prev:before {
   -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
@@ -985,7 +989,7 @@ div.pagination a.prev:before {
   top: 1px;
 }
 
-/* line 476, style.sass */
+/* line 478, style.sass */
 ul.vertical-social {
   -moz-transition: all 0.2s;
   -o-transition: all 0.2s;
@@ -1005,13 +1009,13 @@ ul.vertical-social {
   opacity: 0;
   margin-top: -10px;
 }
-/* line 492, style.sass */
+/* line 494, style.sass */
 ul.vertical-social.show {
   visibility: visible;
   opacity: 1;
   margin-top: 0;
 }
-/* line 497, style.sass */
+/* line 499, style.sass */
 ul.vertical-social:before {
   position: absolute;
   display: block;
@@ -1030,7 +1034,7 @@ ul.vertical-social:before {
   font-size: 0.7rem;
   padding-top: 5px;
 }
-/* line 515, style.sass */
+/* line 517, style.sass */
 ul.vertical-social li {
   list-style: none;
   width: 100%;
@@ -1039,12 +1043,12 @@ ul.vertical-social li {
   padding: 13px 0;
   border-top: 1px solid #ddd;
 }
-/* line 523, style.sass */
+/* line 525, style.sass */
 ul.vertical-social li:first-child {
   border-top: 0px;
 }
 
-/* line 526, style.sass */
+/* line 528, style.sass */
 h3.orange {
   font-family: "ff-tisa-web-pro";
   color: #FF8E2E;
