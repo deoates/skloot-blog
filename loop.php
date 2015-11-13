@@ -1,11 +1,5 @@
 <?php if (have_posts()): while (have_posts()) : the_post(); ?>
-  <?php $half = ($wp_query->current_post % 3 != 0); ?>
-
-  <article <?php if (!$half) { echo "full-width"; } ?> id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
-    <?php if ($half) { ?> 
-      <div class="pcc"> 
-    <?php } ?>
+  <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
       <?php if ( has_post_thumbnail()) : // Check if thumbnail exists ?>
         <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
@@ -29,11 +23,6 @@
       <div class="entry-content digest">
         <?php the_content('Keep Reading'); ?>
       </div>
-
-    <?php if ($half) { ?> 
-      </div><!-- pcc -->
-      <a class="more-link" href="<?php the_permalink(); ?>">Keep Reading</a>
-    <?php  }  ?>
 
   </article>
 
