@@ -733,7 +733,7 @@ aside.sidebar ul.social i {
 main[role="main"] {
   float: right;
   width: calc(100% - 280px);
-  padding-left: 50px;
+  padding-left: 60px;
 }
 
 /* line 296, style.sass */
