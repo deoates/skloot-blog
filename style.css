@@ -385,10 +385,11 @@ th {
   box-sizing: border-box;
 }
 
-/* line 24, style.sass */
+/* line 23, style.sass */
 body {
   font-family: "avenir-roman";
   color: #454B54;
+  padding-top: 55px;
 }
 
 /* line 28, style.sass */
@@ -490,6 +491,11 @@ header[role="banner"] .subscribe-bar {
   height: 40px;
   overflow: hidden;
   margin-bottom: 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
 }
 /* line 38, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/utilities/general/_clearfix.scss */
 header[role="banner"] .subscribe-bar:after {
@@ -497,7 +503,7 @@ header[role="banner"] .subscribe-bar:after {
   display: table;
   clear: both;
 }
-/* line 107, style.sass */
+/* line 112, style.sass */
 header[role="banner"] .subscribe-bar h1 {
   padding: 0;
   display: inline-block;
@@ -508,28 +514,28 @@ header[role="banner"] .subscribe-bar h1 {
   margin-left: 8px;
   font-family: "avenir-light";
 }
-/* line 117, style.sass */
+/* line 122, style.sass */
 header[role="banner"] .subscribe-bar i {
   position: relative;
   font-size: 1.5rem;
   top: 6px;
 }
-/* line 122, style.sass */
+/* line 127, style.sass */
 header[role="banner"] .subscribe-bar p {
   float: right;
   margin-right: 15px;
   font-size: 0.8rem;
 }
-/* line 126, style.sass */
+/* line 131, style.sass */
 header[role="banner"] .subscribe-bar p em {
   font-family: "avenir-mediumoblique";
 }
-/* line 130, style.sass */
+/* line 135, style.sass */
 header[role="banner"] .subscribe-bar form {
   float: right;
   margin-top: 6px;
 }
-/* line 135, style.sass */
+/* line 140, style.sass */
 header[role="banner"] .graph-bg {
   width: 1136px;
   height: 696px;
@@ -540,19 +546,19 @@ header[role="banner"] .graph-bg {
   left: -335px;
   top: -70px;
 }
-/* line 145, style.sass */
+/* line 150, style.sass */
 header[role="banner"] .branding {
   float: left;
 }
-/* line 148, style.sass */
+/* line 153, style.sass */
 header[role="banner"] a {
   color: #454B54;
 }
-/* line 150, style.sass */
+/* line 155, style.sass */
 header[role="banner"] a:hover {
   color: #12679C;
 }
-/* line 153, style.sass */
+/* line 158, style.sass */
 header[role="banner"] p.tagline {
   color: #72A4AD;
   font-family: "avenir-medium";
@@ -560,15 +566,15 @@ header[role="banner"] p.tagline {
   margin: 0;
   margin-top: 10px;
 }
-/* line 161, style.sass */
+/* line 166, style.sass */
 header[role="banner"] .logo {
   display: inline-block;
 }
-/* line 164, style.sass */
+/* line 169, style.sass */
 header[role="banner"] .logo a {
   display: block;
 }
-/* line 167, style.sass */
+/* line 172, style.sass */
 header[role="banner"] .logo h1 {
   margin: 0;
   color: #12679C;
@@ -576,14 +582,14 @@ header[role="banner"] .logo h1 {
   letter-spacing: -0.75px;
   font-size: 1.4rem;
 }
-/* line 174, style.sass */
+/* line 179, style.sass */
 header[role="banner"] .header-search {
   position: relative;
   top: 2px;
   float: right;
   margin-left: 20px;
 }
-/* line 180, style.sass */
+/* line 185, style.sass */
 header[role="banner"] .header-search * {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -592,21 +598,21 @@ header[role="banner"] .header-search * {
   -ms-user-select: none;
   user-select: none;
 }
-/* line 183, style.sass */
+/* line 188, style.sass */
 header[role="banner"] .header-search a {
   cursor: pointer;
 }
-/* line 187, style.sass */
+/* line 192, style.sass */
 header[role="banner"] .header-search.open form {
   top: 35px;
   opacity: 1;
   visibility: visible;
 }
-/* line 192, style.sass */
+/* line 197, style.sass */
 header[role="banner"] .header-search i, header[role="banner"] .header-search form {
   display: inline-block;
 }
-/* line 195, style.sass */
+/* line 200, style.sass */
 header[role="banner"] .header-search form {
   -moz-transition: all 0.1s;
   -o-transition: all 0.1s;
@@ -620,29 +626,29 @@ header[role="banner"] .header-search form {
   visibility: hidden;
   opacity: 0;
 }
-/* line 205, style.sass */
+/* line 210, style.sass */
 header[role="banner"] .header-search form input[type="search"] {
   width: 130px;
 }
-/* line 209, style.sass */
+/* line 214, style.sass */
 header[role="banner"] .header-search i {
   font-size: 1.1rem;
 }
-/* line 212, style.sass */
+/* line 217, style.sass */
 header[role="banner"] nav {
   float: right;
 }
-/* line 215, style.sass */
+/* line 220, style.sass */
 header[role="banner"] nav ul {
   margin: 0;
   padding: 0;
 }
-/* line 219, style.sass */
+/* line 224, style.sass */
 header[role="banner"] nav li {
   list-style: none;
   display: inline-block;
 }
-/* line 223, style.sass */
+/* line 228, style.sass */
 header[role="banner"] nav a {
   font-family: "ff-tisa-web-pro";
   font-weight: 700;
@@ -651,7 +657,7 @@ header[role="banner"] nav a {
   font-size: 0.925rem;
 }
 
-/* line 231, style.sass */
+/* line 236, style.sass */
 aside.sidebar {
   -moz-transition: all 0.4s;
   -o-transition: all 0.4s;
@@ -668,75 +674,76 @@ aside.sidebar {
   opacity: 1;
   top: 0;
 }
-/* line 244, style.sass */
+/* line 249, style.sass */
 aside.sidebar.hide {
   opacity: 0;
   visibility: hidden;
   top: -20px;
 }
-/* line 249, style.sass */
+/* line 254, style.sass */
 aside.sidebar div[class^="widget_"], aside.sidebar div[class*=" widget_"] {
   margin-bottom: 35px;
 }
-/* line 252, style.sass */
+/* line 257, style.sass */
 aside.sidebar form {
   margin-top: 15px;
 }
-/* line 255, style.sass */
+/* line 260, style.sass */
 aside.sidebar ul {
   margin: 0;
   padding: 0;
 }
-/* line 259, style.sass */
+/* line 264, style.sass */
 aside.sidebar ul li {
   list-style: none;
 }
-/* line 262, style.sass */
+/* line 267, style.sass */
 aside.sidebar ul li a {
   color: #6E7174;
 }
-/* line 264, style.sass */
+/* line 269, style.sass */
 aside.sidebar ul li a:hover {
   color: #12679C;
 }
-/* line 267, style.sass */
+/* line 272, style.sass */
 aside.sidebar h3 {
   font-size: 0.95rem;
   margin: 10px 0;
   font-family: "ff-tisa-web-pro";
   color: #12679C;
 }
-/* line 273, style.sass */
+/* line 278, style.sass */
 aside.sidebar #text-3 h3 {
   font-size: 1.1rem;
   margin: 15px 0;
 }
-/* line 277, style.sass */
+/* line 282, style.sass */
 aside.sidebar img.headshot {
   margin-left: -4px;
+  margin-bottom: -16px;
 }
-/* line 282, style.sass */
+/* line 288, style.sass */
 aside.sidebar ul.social li {
   display: inline-block;
   margin-right: 10px;
 }
-/* line 286, style.sass */
+/* line 292, style.sass */
 aside.sidebar ul.social a {
   color: #454B54;
 }
-/* line 288, style.sass */
+/* line 294, style.sass */
 aside.sidebar ul.social i {
   font-size: 1.2rem;
 }
 
-/* line 291, style.sass */
+/* line 297, style.sass */
 main[role="main"] {
   float: right;
   width: calc(100% - 280px);
   padding-left: 60px;
 }
 
-/* line 296, style.sass */
+/* line 302, style.sass */
 article {
   margin-bottom: 60px;
   *zoom: 1;
@@ -747,25 +754,25 @@ article:after {
   display: table;
   clear: both;
 }
-/* line 300, style.sass */
+/* line 306, style.sass */
 article span.date {
   font-family: "avenir-black";
   font-size: 0.9rem;
   margin-right: 25px;
 }
-/* line 305, style.sass */
+/* line 311, style.sass */
 article ul.post-sharing {
   display: inline-block;
   margin: 0;
   padding: 0;
 }
-/* line 310, style.sass */
+/* line 316, style.sass */
 article ul.post-sharing li {
   list-style: none;
   display: inline-block;
   margin-right: 15px;
 }
-/* line 315, style.sass */
+/* line 321, style.sass */
 article ul.post-sharing li span {
   font-family: "avenir-medium";
   opacity: 0.75;
@@ -773,20 +780,20 @@ article ul.post-sharing li span {
   position: relative;
   top: -1px;
 }
-/* line 322, style.sass */
+/* line 328, style.sass */
 article ul.post-sharing li i {
   font-size: 1.1rem;
 }
-/* line 325, style.sass */
+/* line 331, style.sass */
 article ul.post-sharing li a {
   color: #454B54;
 }
-/* line 327, style.sass */
+/* line 333, style.sass */
 article ul.post-sharing li a:hover {
   color: #12679C;
 }
 
-/* line 330, style.sass */
+/* line 336, style.sass */
 h2.post-title {
   font-family: "ff-tisa-web-pro";
   font-size: 2.8rem;
@@ -794,12 +801,12 @@ h2.post-title {
   line-height: 1.2;
   color: #FF8E2E;
 }
-/* line 337, style.sass */
+/* line 343, style.sass */
 h2.post-title a {
   color: #FF8E2E;
 }
 
-/* line 340, style.sass */
+/* line 346, style.sass */
 .post-edit-link {
   color: #12679C;
   float: right;
@@ -808,18 +815,18 @@ h2.post-title a {
   opacity: 0.6;
 }
 
-/* line 347, style.sass */
+/* line 353, style.sass */
 div.entry-content {
   line-height: 1.55;
   font-size: 1.05rem;
   position: relative;
   padding-right: 160px;
 }
-/* line 353, style.sass */
+/* line 359, style.sass */
 div.entry-content img.alignright {
   margin-right: -160px;
 }
-/* line 356, style.sass */
+/* line 362, style.sass */
 div.entry-content a.more-link {
   -moz-transition: all 0.1s;
   -o-transition: all 0.1s;
@@ -839,16 +846,16 @@ div.entry-content a.more-link {
   -webkit-box-shadow: 14px 0 0 white;
   box-shadow: 14px 0 0 white;
 }
-/* line 370, style.sass */
+/* line 376, style.sass */
 div.entry-content a.more-link:hover {
   background: #FF8E2E;
   color: #fff;
 }
-/* line 374, style.sass */
+/* line 380, style.sass */
 div.entry-content a.more-link:hover:after {
   padding-left: 12px;
 }
-/* line 377, style.sass */
+/* line 383, style.sass */
 div.entry-content a.more-link:before {
   display: block;
   content: "";
@@ -859,7 +866,7 @@ div.entry-content a.more-link:before {
   position: absolute;
   margin-top: 8px;
 }
-/* line 387, style.sass */
+/* line 393, style.sass */
 div.entry-content a.more-link:after {
   -moz-transition: all 0.2s;
   -o-transition: all 0.2s;
@@ -871,20 +878,20 @@ div.entry-content a.more-link:after {
   top: 1px;
   padding-left: 8px;
 }
-/* line 398, style.sass */
+/* line 404, style.sass */
 div.entry-content img.alignright {
   float: right;
   margin-left: 30px;
   margin-bottom: 25px;
 }
-/* line 403, style.sass */
+/* line 409, style.sass */
 div.entry-content img.alignleft {
   float: left;
   margin-right: 30px;
   margin-bottom: 25px;
 }
 
-/* line 408, style.sass */
+/* line 414, style.sass */
 .content-wrapper {
   *zoom: 1;
 }
@@ -895,10 +902,14 @@ div.entry-content img.alignleft {
   clear: both;
 }
 
-/* line 411, style.sass */
+/* line 417, style.sass */
 footer {
   width: 100%;
   *zoom: 1;
+  border-top: 1px solid #D1D8DC;
+  margin-top: 45px;
+  font-size: 0.8rem;
+  padding: 20px 0 25px;
 }
 /* line 38, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/utilities/general/_clearfix.scss */
 footer:after {
@@ -906,8 +917,13 @@ footer:after {
   display: table;
   clear: both;
 }
+/* line 424, style.sass */
+footer p {
+  margin: 0;
+  padding: 0;
+}
 
-/* line 416, style.sass */
+/* line 428, style.sass */
 div.pagination {
   background: #F0F6F7;
   position: relative;
@@ -915,28 +931,28 @@ div.pagination {
   height: 30px;
   padding-top: 4px;
 }
-/* line 423, style.sass */
+/* line 435, style.sass */
 div.pagination a, div.pagination span {
   color: #454B54;
   font-size: 0.8rem;
 }
-/* line 427, style.sass */
+/* line 439, style.sass */
 div.pagination a {
   font-family: "avenir-black";
 }
-/* line 430, style.sass */
+/* line 442, style.sass */
 div.pagination span {
   font-family: "avenir-roman";
 }
-/* line 433, style.sass */
+/* line 445, style.sass */
 div.pagination a.page-numbers {
   padding: 0 6px;
 }
-/* line 436, style.sass */
+/* line 448, style.sass */
 div.pagination a.page-numbers:hover {
   color: #12679C;
 }
-/* line 439, style.sass */
+/* line 451, style.sass */
 div.pagination a.next, div.pagination a.prev {
   -moz-transition: all 0.2s;
   -o-transition: all 0.2s;
@@ -954,16 +970,16 @@ div.pagination a.next, div.pagination a.prev {
   font-size: 0.7rem;
   letter-spacing: 1.5px;
 }
-/* line 453, style.sass */
+/* line 465, style.sass */
 div.pagination a.next:hover, div.pagination a.prev:hover {
   background: #FF8E2E;
   color: #fff;
 }
-/* line 457, style.sass */
+/* line 469, style.sass */
 div.pagination a.next {
   right: 0;
 }
-/* line 459, style.sass */
+/* line 471, style.sass */
 div.pagination a.next:after {
   content: "";
   font-family: "icomoon";
@@ -971,11 +987,11 @@ div.pagination a.next:after {
   top: 1px;
   padding-left: 8px;
 }
-/* line 466, style.sass */
+/* line 478, style.sass */
 div.pagination a.prev {
   left: 0;
 }
-/* line 468, style.sass */
+/* line 480, style.sass */
 div.pagination a.prev:before {
   -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
@@ -989,7 +1005,7 @@ div.pagination a.prev:before {
   top: 1px;
 }
 
-/* line 478, style.sass */
+/* line 490, style.sass */
 ul.vertical-social {
   -moz-transition: all 0.2s;
   -o-transition: all 0.2s;
@@ -1009,13 +1025,13 @@ ul.vertical-social {
   opacity: 0;
   margin-top: -10px;
 }
-/* line 494, style.sass */
+/* line 506, style.sass */
 ul.vertical-social.show {
   visibility: visible;
   opacity: 1;
   margin-top: 0;
 }
-/* line 499, style.sass */
+/* line 511, style.sass */
 ul.vertical-social:before {
   position: absolute;
   display: block;
@@ -1034,7 +1050,7 @@ ul.vertical-social:before {
   font-size: 0.7rem;
   padding-top: 5px;
 }
-/* line 517, style.sass */
+/* line 529, style.sass */
 ul.vertical-social li {
   list-style: none;
   width: 100%;
@@ -1043,12 +1059,12 @@ ul.vertical-social li {
   padding: 13px 0;
   border-top: 1px solid #ddd;
 }
-/* line 525, style.sass */
+/* line 537, style.sass */
 ul.vertical-social li:first-child {
   border-top: 0px;
 }
 
-/* line 528, style.sass */
+/* line 540, style.sass */
 h3.orange {
   font-family: "ff-tisa-web-pro";
   color: #FF8E2E;

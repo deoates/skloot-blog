@@ -20,10 +20,10 @@ $orange-text: #FF7600
   -ms-user-select: none
   user-select: none
 
-
 body
   font-family: 'avenir-roman'
   color: $dark
+  padding-top: 55px
 
 strong
   font-family: 'avenir-black'
@@ -103,6 +103,11 @@ header[role="banner"]
     height: 40px
     overflow: hidden
     margin-bottom: 15px
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    z-index: 999
 
     h1
       padding: 0
@@ -276,6 +281,7 @@ aside.sidebar
 
   img.headshot
     margin-left: -4px
+    margin-bottom: -16px
 
   ul.social
 
@@ -411,8 +417,14 @@ div.entry-content
 footer
   width: 100%
   @include pie-clearfix
-
-
+  border-top: 1px solid #D1D8DC
+  margin-top: 45px
+  font-size: .8rem
+  padding: 20px 0 25px
+  p 
+    margin: 0
+    padding: 0
+  
 div.pagination
   background: #F0F6F7
   position: relative
