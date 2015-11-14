@@ -10,8 +10,6 @@
       <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 
-        <?php edit_post_link(); // Always handy to have Edit Post Links available ?>
-
         <!-- post thumbnail -->
         <?php if ( has_post_thumbnail()) : // Check if Thumbnail exists ?>
           <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
@@ -54,7 +52,6 @@
           </ul>
           <?php the_content(); // Dynamic Content ?>
         </div>
-
         
         <!--<?php the_tags( __( 'Tags: ', 'html5blank' ), ', ', '<br>'); // Separated by commas with a line break at the end ?> -->
 
