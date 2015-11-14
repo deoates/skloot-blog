@@ -42,9 +42,10 @@
         <div class="subscribe-bar">
           <div class="restrict">
             <i class="icon-email"></i><h1>Subscribe To <strong>Up &amp; To The Right</a></strong></h1>
-            <form>
-              <input type="text" placeholder="Email address">
-              <input type="submit" value="Join">
+            <form action="http://skloot.us12.list-manage.com/subscribe/post">
+            <input type="hidden" name="u" value="1d30a60074b21254b24d57bbd">
+            <input type="hidden" name="id" value="06bc76bc4d">
+            <input type="email" autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0" size="25" placeholder="Email address" value=""><input type="submit" value="Join">
             </form>
             <p><em>"I couldn't do my job without Greg's emails. Period."</em></p>
           </div>
