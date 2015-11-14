@@ -441,7 +441,7 @@ a {
 }
 
 /* line 64, style.sass */
-form input[type="text"], form input[type="search"] {
+form input[type="text"], form input[type="search"], form input[type="email"] {
   box-sizing: border-box !important;
   background: #fff;
   border: 1px solid #FFBB79;
@@ -455,7 +455,7 @@ form input[type="text"], form input[type="search"] {
   letter-spacing: 0.5px;
 }
 /* line 77, style.sass */
-form input[type="text"]:focus, form input[type="search"]:focus {
+form input[type="text"]:focus, form input[type="search"]:focus, form input[type="email"]:focus {
   border-color: #ffa650;
   outline: 0px;
 }
