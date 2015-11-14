@@ -6,7 +6,7 @@
     </a>
   </li>
   <li>
-    <a target="_blank" href="https://twitter.com/home?status=<?php the_title(); ?> on Up & To The Right by @gregskloot <?php the_permalink(); ?>">
+    <a target="_blank" href="https://twitter.com/home?status=<?php the_title(); ?> on Up &amp; To The Right by @gregskloot <?php the_permalink(); ?>">
       <i class="icon-twitter"></i>
       <span class="count"><?php echo pssc_twitter() ?></span>
     </a>
