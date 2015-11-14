@@ -46,7 +46,7 @@
               <script type="IN/Share" data-url="<?php the_permalink(); ?>" data-counter="top"></script>
             </li>
             <li>
-                <a id="email-share" href="mailto:?subject='<?php the_title(); ?> - <?php the_permalink(); ?>" title="Share by Email">
+                <a id="email-share" href="mailto:?subject=<?php the_title(); ?> - <?php the_permalink(); ?>" title="Share by Email">
                 <img src="http://blog.netpulse.com/hubfs/blog-src/email-icon.png" width="48" height="auto"></a>
             </li>
           </ul>
