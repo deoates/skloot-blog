@@ -396,40 +396,38 @@ body {
   body {
     padding-top: 15px;
     max-width: 100%;
-    overflow-x: hidden;
-    overflow-y: scroll;
   }
 }
 
-/* line 36, style.sass */
+/* line 34, style.sass */
 strong {
   font-family: "avenir-black";
   font-weight: 700;
 }
-/* line 40, style.sass */
+/* line 38, style.sass */
 strong em {
   font-family: "avenir-blackoblique";
   font-weight: 700;
 }
 
-/* line 44, style.sass */
+/* line 42, style.sass */
 em {
   font-family: "avenir-oblique";
   font-weight: 400;
 }
-/* line 48, style.sass */
+/* line 46, style.sass */
 em strong {
   font-family: "avenir-blackoblique";
   font-weight: 700;
 }
 
-/* line 52, style.sass */
+/* line 50, style.sass */
 a {
   text-decoration: none;
   color: #12679C;
 }
 
-/* line 56, style.sass */
+/* line 54, style.sass */
 .restrict {
   max-width: 100%;
   width: 1140px;
@@ -437,17 +435,17 @@ a {
   padding: 0px 30px;
 }
 @media (max-width: 640px) {
-  /* line 56, style.sass */
+  /* line 54, style.sass */
   .restrict {
     padding: 0 22.5px;
   }
 }
 
-/* line 66, style.sass */
+/* line 64, style.sass */
 form {
   display: inline-block;
 }
-/* line 69, style.sass */
+/* line 67, style.sass */
 form input[type="text"], form input[type="search"], form input[type="email"] {
   box-sizing: border-box !important;
   background: #fff;
@@ -462,12 +460,12 @@ form input[type="text"], form input[type="search"], form input[type="email"] {
   letter-spacing: 0.5px;
   border-radius: 0px;
 }
-/* line 83, style.sass */
+/* line 81, style.sass */
 form input[type="text"]:focus, form input[type="search"]:focus, form input[type="email"]:focus {
   border-color: #ffa650;
   outline: 0px;
 }
-/* line 87, style.sass */
+/* line 85, style.sass */
 form input[type="submit"], form button[type="submit"] {
   border-radius: 0px;
   height: 27px;
@@ -481,7 +479,7 @@ form input[type="submit"], form button[type="submit"] {
   float: right;
   position: relative;
 }
-/* line 100, style.sass */
+/* line 98, style.sass */
 form input[type="submit"]:after, form button[type="submit"]:after {
   content: "";
   font-family: "icomoon";
@@ -489,9 +487,11 @@ form input[type="submit"]:after, form button[type="submit"]:after {
   top: 1px;
 }
 
-/* line 106, style.sass */
+/* line 104, style.sass */
 header[role="banner"] {
   *zoom: 1;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 /* line 38, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/utilities/general/_clearfix.scss */
 header[role="banner"]:after {
