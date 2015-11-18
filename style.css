@@ -1250,3 +1250,8 @@ h3.orange {
   font-family: "ff-tisa-web-pro";
   color: #FF8E2E;
 }
+
+/* line 639, style.sass */
+li.cat-item-234 {
+  display: none;
+}
