@@ -483,8 +483,9 @@ form input[type="submit"], form button[type="submit"] {
   letter-spacing: 1.5px;
   float: right;
   position: relative;
+  -webkit-appearance: none;
 }
-/* line 101, style.sass */
+/* line 102, style.sass */
 form input[type="submit"]:after, form button[type="submit"]:after {
   content: "";
   font-family: "icomoon";
@@ -492,7 +493,7 @@ form input[type="submit"]:after, form button[type="submit"]:after {
   top: 1px;
 }
 
-/* line 107, style.sass */
+/* line 108, style.sass */
 header[role="banner"] {
   *zoom: 1;
   max-width: 100%;
@@ -503,11 +504,11 @@ header[role="banner"]:after {
   display: table;
   clear: both;
 }
-/* line 111, style.sass */
+/* line 112, style.sass */
 header[role="banner"] .restrict {
   position: relative;
 }
-/* line 114, style.sass */
+/* line 115, style.sass */
 header[role="banner"] .subscribe-bar {
   *zoom: 1;
   background: #FFFACB;
@@ -529,12 +530,12 @@ header[role="banner"] .subscribe-bar:after {
   clear: both;
 }
 @media (max-width: 750px) {
-  /* line 114, style.sass */
+  /* line 115, style.sass */
   header[role="banner"] .subscribe-bar {
     display: none;
   }
 }
-/* line 131, style.sass */
+/* line 132, style.sass */
 header[role="banner"] .subscribe-bar h1 {
   padding: 0;
   display: inline-block;
@@ -545,28 +546,28 @@ header[role="banner"] .subscribe-bar h1 {
   margin-left: 8px;
   font-family: "avenir-light";
 }
-/* line 141, style.sass */
+/* line 142, style.sass */
 header[role="banner"] .subscribe-bar i {
   position: relative;
   font-size: 1.5rem;
   top: 6px;
 }
-/* line 146, style.sass */
+/* line 147, style.sass */
 header[role="banner"] .subscribe-bar p {
   float: right;
   margin-right: 15px;
   font-size: 0.8rem;
 }
-/* line 150, style.sass */
+/* line 151, style.sass */
 header[role="banner"] .subscribe-bar p em {
   font-family: "avenir-mediumoblique";
 }
-/* line 154, style.sass */
+/* line 155, style.sass */
 header[role="banner"] .subscribe-bar form {
   float: right;
   margin-top: 6px;
 }
-/* line 159, style.sass */
+/* line 160, style.sass */
 header[role="banner"] .graph-bg {
   width: 1136px;
   height: 696px;
@@ -579,44 +580,44 @@ header[role="banner"] .graph-bg {
   opacity: 0.75;
 }
 @media (max-width: 1000px) {
-  /* line 159, style.sass */
+  /* line 160, style.sass */
   header[role="banner"] .graph-bg {
     left: -375px;
   }
 }
 @media (max-width: 850px) {
-  /* line 159, style.sass */
+  /* line 160, style.sass */
   header[role="banner"] .graph-bg {
     left: -450px;
   }
 }
 @media (max-width: 750px) {
-  /* line 159, style.sass */
+  /* line 160, style.sass */
   header[role="banner"] .graph-bg {
     top: -70px;
     opacity: 0.3;
   }
 }
 @media (max-width: 640px) {
-  /* line 159, style.sass */
+  /* line 160, style.sass */
   header[role="banner"] .graph-bg {
     left: -490px;
     top: -90px;
   }
 }
-/* line 184, style.sass */
+/* line 185, style.sass */
 header[role="banner"] .branding {
   float: left;
 }
-/* line 187, style.sass */
+/* line 188, style.sass */
 header[role="banner"] a {
   color: #454B54;
 }
-/* line 189, style.sass */
+/* line 190, style.sass */
 header[role="banner"] a:hover {
   color: #12679C;
 }
-/* line 192, style.sass */
+/* line 193, style.sass */
 header[role="banner"] p.tagline {
   color: #72A4AD;
   font-family: "avenir-medium";
@@ -625,20 +626,20 @@ header[role="banner"] p.tagline {
   margin-top: 10px;
 }
 @media (max-width: 1000px) {
-  /* line 192, style.sass */
+  /* line 193, style.sass */
   header[role="banner"] p.tagline {
     font-size: 0.8rem;
   }
 }
-/* line 202, style.sass */
+/* line 203, style.sass */
 header[role="banner"] .logo {
   display: inline-block;
 }
-/* line 205, style.sass */
+/* line 206, style.sass */
 header[role="banner"] .logo a {
   display: block;
 }
-/* line 208, style.sass */
+/* line 209, style.sass */
 header[role="banner"] .logo h1 {
   margin: 0;
   color: #12679C;
@@ -647,12 +648,12 @@ header[role="banner"] .logo h1 {
   font-size: 1.4rem;
 }
 @media (max-width: 640px) {
-  /* line 208, style.sass */
+  /* line 209, style.sass */
   header[role="banner"] .logo h1 {
     font-size: 1.2rem;
   }
 }
-/* line 218, style.sass */
+/* line 219, style.sass */
 header[role="banner"] .header-search {
   position: relative;
   top: 2px;
@@ -660,12 +661,12 @@ header[role="banner"] .header-search {
   margin-left: 20px;
 }
 @media (max-width: 640px) {
-  /* line 218, style.sass */
+  /* line 219, style.sass */
   header[role="banner"] .header-search {
     display: none;
   }
 }
-/* line 227, style.sass */
+/* line 228, style.sass */
 header[role="banner"] .header-search * {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -674,21 +675,21 @@ header[role="banner"] .header-search * {
   -ms-user-select: none;
   user-select: none;
 }
-/* line 230, style.sass */
+/* line 231, style.sass */
 header[role="banner"] .header-search a {
   cursor: pointer;
 }
-/* line 234, style.sass */
+/* line 235, style.sass */
 header[role="banner"] .header-search.open form {
   top: 35px;
   opacity: 1;
   visibility: visible;
 }
-/* line 239, style.sass */
+/* line 240, style.sass */
 header[role="banner"] .header-search i, header[role="banner"] .header-search form {
   display: inline-block;
 }
-/* line 242, style.sass */
+/* line 243, style.sass */
 header[role="banner"] .header-search form {
   -moz-transition: all 0.1s;
   -o-transition: all 0.1s;
@@ -702,7 +703,7 @@ header[role="banner"] .header-search form {
   visibility: hidden;
   opacity: 0;
 }
-/* line 252, style.sass */
+/* line 253, style.sass */
 header[role="banner"] .header-search form input[type="search"] {
   width: 130px;
 }
