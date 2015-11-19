@@ -579,7 +579,7 @@ header[role="banner"] .graph-bg {
   top: -70px;
   opacity: 0.75;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   /* line 160, style.sass */
   header[role="banner"] .graph-bg {
     left: -375px;
@@ -625,7 +625,7 @@ header[role="banner"] p.tagline {
   margin: 0;
   margin-top: 10px;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   /* line 193, style.sass */
   header[role="banner"] p.tagline {
     font-size: 0.8rem;
@@ -740,19 +740,19 @@ header[role="banner"] nav a {
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   /* line 284, style.sass */
   body.single-post aside.sidebar {
     display: none;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   /* line 288, style.sass */
   body.single-post .graph-bg {
     opacity: 0.3;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   /* line 292, style.sass */
   body.single-post main[role="main"] {
     width: 100%;
@@ -782,7 +782,7 @@ aside.sidebar {
   opacity: 1;
   top: 0;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   /* line 302, style.sass */
   aside.sidebar {
     width: 240px;
@@ -862,7 +862,7 @@ main[role="main"] {
   width: calc(100% - 280px);
   padding-left: 60px;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   /* line 369, style.sass */
   main[role="main"] {
     width: calc(100% - 240px);
@@ -969,7 +969,7 @@ h2.post-title {
   line-height: 1.2;
   color: #FF8E2E;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   /* line 437, style.sass */
   h2.post-title {
     font-size: 2.3rem;
@@ -1052,7 +1052,7 @@ div.entry-content {
     padding-right: 100px;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   /* line 491, style.sass */
   div.entry-content {
     padding-right: 0;
@@ -1068,7 +1068,7 @@ div.entry-content img.alignright {
     margin-right: -100px;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   /* line 503, style.sass */
   div.entry-content img.alignright {
     margin-right: 0;
@@ -1231,7 +1231,7 @@ ul.vertical-social {
   opacity: 0;
   margin-top: -10px;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   /* line 606, style.sass */
   ul.vertical-social {
     display: none;
