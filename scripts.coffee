@@ -2,6 +2,9 @@ $ ->
 
   contentOffset = $('div.entry-content').offset()
 
+  $(window).resize (e) ->
+    contentOffset = $('div.entry-content').offset()
+
   $('.vertical-social').css
     left: contentOffset.left - 150
 

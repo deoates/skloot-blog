@@ -3,6 +3,9 @@
   $(function() {
     var contentOffset;
     contentOffset = $('div.entry-content').offset();
+    $(window).resize(function(e) {
+      return contentOffset = $('div.entry-content').offset();
+    });
     $('.vertical-social').css({
       left: contentOffset.left - 150
     });

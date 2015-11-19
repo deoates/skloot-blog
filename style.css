@@ -763,95 +763,91 @@ aside.sidebar {
     width: 240px;
   }
 }
-@media (max-width: 850px) {
+@media (max-width: 840px) {
   /* line 282, style.sass */
   aside.sidebar {
     width: 200px;
   }
 }
-@media (max-width: 750px) {
-  /* line 282, style.sass */
-  aside.sidebar {
-    display: none;
+@media (min-width: 840px) {
+  /* line 301, style.sass */
+  aside.sidebar.hide {
+    opacity: 0;
+    visibility: hidden;
+    top: -20px;
   }
 }
-/* line 304, style.sass */
-aside.sidebar.hide {
-  opacity: 0;
-  visibility: hidden;
-  top: -20px;
-}
-/* line 309, style.sass */
+/* line 307, style.sass */
 aside.sidebar div[class^="widget_"], aside.sidebar div[class*=" widget_"] {
   margin-bottom: 35px;
 }
-/* line 312, style.sass */
+/* line 310, style.sass */
 aside.sidebar form {
   margin-top: 15px;
 }
-/* line 315, style.sass */
+/* line 313, style.sass */
 aside.sidebar ul {
   margin: 0;
   padding: 0;
 }
-/* line 319, style.sass */
+/* line 317, style.sass */
 aside.sidebar ul li {
   list-style: none;
 }
-/* line 322, style.sass */
+/* line 320, style.sass */
 aside.sidebar ul li a {
   color: #6E7174;
 }
-/* line 324, style.sass */
+/* line 322, style.sass */
 aside.sidebar ul li a:hover {
   color: #12679C;
 }
-/* line 327, style.sass */
+/* line 325, style.sass */
 aside.sidebar h3 {
   font-size: 0.95rem;
   margin: 10px 0;
   font-family: "ff-tisa-web-pro";
   color: #12679C;
 }
-/* line 333, style.sass */
+/* line 331, style.sass */
 aside.sidebar #text-3 h3 {
   font-size: 1.1rem;
   margin: 15px 0;
 }
-/* line 337, style.sass */
+/* line 335, style.sass */
 aside.sidebar img.headshot {
   margin-left: -4px;
   margin-bottom: -16px;
 }
-/* line 343, style.sass */
+/* line 341, style.sass */
 aside.sidebar ul.social li {
   display: inline-block;
   margin-right: 10px;
 }
-/* line 347, style.sass */
+/* line 345, style.sass */
 aside.sidebar ul.social a {
   color: #454B54;
 }
-/* line 349, style.sass */
+/* line 347, style.sass */
 aside.sidebar ul.social i {
   font-size: 1.2rem;
 }
 
-/* line 352, style.sass */
+/* line 350, style.sass */
 main[role="main"] {
   float: right;
   width: calc(100% - 280px);
   padding-left: 60px;
 }
 @media (max-width: 1000px) {
-  /* line 352, style.sass */
+  /* line 350, style.sass */
   main[role="main"] {
     width: calc(100% - 240px);
     padding-left: 40px;
   }
 }
 @media (max-width: 850px) {
-  /* line 352, style.sass */
+  /* line 350, style.sass */
   main[role="main"] {
     width: calc(100% - 200px);
     padding-left: 25px;
@@ -859,7 +855,7 @@ main[role="main"] {
   }
 }
 @media (max-width: 750px) {
-  /* line 352, style.sass */
+  /* line 350, style.sass */
   main[role="main"] {
     width: 100%;
     margin-top: 25px;
@@ -867,7 +863,7 @@ main[role="main"] {
   }
 }
 
-/* line 373, style.sass */
+/* line 371, style.sass */
 article {
   margin-bottom: 60px;
   *zoom: 1;
@@ -880,42 +876,42 @@ article:after {
   display: table;
   clear: both;
 }
-/* line 379, style.sass */
+/* line 377, style.sass */
 article img {
   max-width: 100%;
 }
-/* line 382, style.sass */
+/* line 380, style.sass */
 article span.date {
   font-family: "avenir-black";
   font-size: 0.9rem;
   margin-right: 25px;
 }
 @media (max-width: 850px) {
-  /* line 382, style.sass */
+  /* line 380, style.sass */
   article span.date {
     font-size: 0.85rem;
     margin-right: 12px;
   }
 }
-/* line 391, style.sass */
+/* line 389, style.sass */
 article ul.post-sharing {
   display: inline-block;
   margin: 0;
   padding: 0;
 }
-/* line 396, style.sass */
+/* line 394, style.sass */
 article ul.post-sharing li {
   list-style: none;
   display: inline-block;
   margin-right: 15px;
 }
 @media (max-width: 850px) {
-  /* line 396, style.sass */
+  /* line 394, style.sass */
   article ul.post-sharing li {
     margin-right: 12px;
   }
 }
-/* line 403, style.sass */
+/* line 401, style.sass */
 article ul.post-sharing li span {
   font-family: "avenir-medium";
   opacity: 0.75;
@@ -923,26 +919,26 @@ article ul.post-sharing li span {
   position: relative;
   top: -1px;
 }
-/* line 410, style.sass */
+/* line 408, style.sass */
 article ul.post-sharing li i {
   font-size: 1rem;
 }
 @media (max-width: 850px) {
-  /* line 410, style.sass */
+  /* line 408, style.sass */
   article ul.post-sharing li i {
     font-size: 0.9rem;
   }
 }
-/* line 415, style.sass */
+/* line 413, style.sass */
 article ul.post-sharing li a {
   color: #454B54;
 }
-/* line 417, style.sass */
+/* line 415, style.sass */
 article ul.post-sharing li a:hover {
   color: #12679C;
 }
 
-/* line 420, style.sass */
+/* line 418, style.sass */
 h2.post-title {
   font-family: "ff-tisa-web-pro";
   font-size: 2.8rem;
@@ -951,23 +947,23 @@ h2.post-title {
   color: #FF8E2E;
 }
 @media (max-width: 1000px) {
-  /* line 420, style.sass */
+  /* line 418, style.sass */
   h2.post-title {
     font-size: 2rem;
   }
 }
 @media (max-width: 640px) {
-  /* line 420, style.sass */
+  /* line 418, style.sass */
   h2.post-title {
     font-size: 1.6rem;
   }
 }
-/* line 432, style.sass */
+/* line 430, style.sass */
 h2.post-title a {
   color: #FF8E2E;
 }
 
-/* line 435, style.sass */
+/* line 433, style.sass */
 a.more-link {
   -moz-transition: all 0.1s;
   -o-transition: all 0.1s;
@@ -987,16 +983,16 @@ a.more-link {
   -webkit-box-shadow: 14px 0 0 white;
   box-shadow: 14px 0 0 white;
 }
-/* line 449, style.sass */
+/* line 447, style.sass */
 a.more-link:hover {
   background: #FF8E2E;
   color: #fff;
 }
-/* line 453, style.sass */
+/* line 451, style.sass */
 a.more-link:hover:after {
   padding-left: 12px;
 }
-/* line 456, style.sass */
+/* line 454, style.sass */
 a.more-link:before {
   display: block;
   content: "";
@@ -1007,7 +1003,7 @@ a.more-link:before {
   position: absolute;
   margin-top: 8px;
 }
-/* line 466, style.sass */
+/* line 464, style.sass */
 a.more-link:after {
   -moz-transition: all 0.2s;
   -o-transition: all 0.2s;
@@ -1020,7 +1016,7 @@ a.more-link:after {
   padding-left: 8px;
 }
 
-/* line 474, style.sass */
+/* line 472, style.sass */
 div.entry-content {
   line-height: 1.55;
   font-size: 1.05rem;
@@ -1028,35 +1024,35 @@ div.entry-content {
   padding-right: 160px;
 }
 @media (max-width: 1000px) {
-  /* line 474, style.sass */
+  /* line 472, style.sass */
   div.entry-content {
     padding-right: 0;
   }
 }
-/* line 483, style.sass */
+/* line 481, style.sass */
 div.entry-content img.alignright {
   margin-right: -160px;
 }
 @media (max-width: 1000px) {
-  /* line 483, style.sass */
+  /* line 481, style.sass */
   div.entry-content img.alignright {
     margin-right: 0;
   }
 }
-/* line 489, style.sass */
+/* line 487, style.sass */
 div.entry-content img.alignright {
   float: right;
   margin-left: 30px;
   margin-bottom: 25px;
 }
-/* line 494, style.sass */
+/* line 492, style.sass */
 div.entry-content img.alignleft {
   float: left;
   margin-right: 30px;
   margin-bottom: 25px;
 }
 @media (max-width: 640px) {
-  /* line 499, style.sass */
+  /* line 497, style.sass */
   div.entry-content img.alignright, div.entry-content img.alignleft {
     float: none;
     clear: both;
@@ -1065,7 +1061,7 @@ div.entry-content img.alignleft {
   }
 }
 
-/* line 506, style.sass */
+/* line 504, style.sass */
 .content-wrapper {
   *zoom: 1;
 }
@@ -1076,7 +1072,7 @@ div.entry-content img.alignleft {
   clear: both;
 }
 
-/* line 509, style.sass */
+/* line 507, style.sass */
 footer {
   width: 100%;
   *zoom: 1;
@@ -1091,13 +1087,13 @@ footer:after {
   display: table;
   clear: both;
 }
-/* line 516, style.sass */
+/* line 514, style.sass */
 footer p {
   margin: 0;
   padding: 0;
 }
 
-/* line 520, style.sass */
+/* line 518, style.sass */
 div.pagination {
   background: #F0F6F7;
   position: relative;
@@ -1106,28 +1102,28 @@ div.pagination {
   padding-top: 4px;
   clear: both;
 }
-/* line 528, style.sass */
+/* line 526, style.sass */
 div.pagination a, div.pagination span {
   color: #454B54;
   font-size: 0.8rem;
 }
-/* line 532, style.sass */
+/* line 530, style.sass */
 div.pagination a {
   font-family: "avenir-black";
 }
-/* line 535, style.sass */
+/* line 533, style.sass */
 div.pagination span {
   font-family: "avenir-roman";
 }
-/* line 538, style.sass */
+/* line 536, style.sass */
 div.pagination a.page-numbers {
   padding: 0 6px;
 }
-/* line 541, style.sass */
+/* line 539, style.sass */
 div.pagination a.page-numbers:hover {
   color: #12679C;
 }
-/* line 544, style.sass */
+/* line 542, style.sass */
 div.pagination a.next, div.pagination a.prev {
   -moz-transition: all 0.2s;
   -o-transition: all 0.2s;
@@ -1145,16 +1141,16 @@ div.pagination a.next, div.pagination a.prev {
   font-size: 0.7rem;
   letter-spacing: 1.5px;
 }
-/* line 558, style.sass */
+/* line 556, style.sass */
 div.pagination a.next:hover, div.pagination a.prev:hover {
   background: #FF8E2E;
   color: #fff;
 }
-/* line 562, style.sass */
+/* line 560, style.sass */
 div.pagination a.next {
   right: 0;
 }
-/* line 564, style.sass */
+/* line 562, style.sass */
 div.pagination a.next:after {
   content: "";
   font-family: "icomoon";
@@ -1162,11 +1158,11 @@ div.pagination a.next:after {
   top: 1px;
   padding-left: 8px;
 }
-/* line 571, style.sass */
+/* line 569, style.sass */
 div.pagination a.prev {
   left: 0;
 }
-/* line 573, style.sass */
+/* line 571, style.sass */
 div.pagination a.prev:before {
   -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
@@ -1180,7 +1176,7 @@ div.pagination a.prev:before {
   top: 1px;
 }
 
-/* line 582, style.sass */
+/* line 580, style.sass */
 ul.vertical-social {
   -moz-transition: all 0.2s;
   -o-transition: all 0.2s;
@@ -1200,19 +1196,19 @@ ul.vertical-social {
   opacity: 0;
   margin-top: -10px;
 }
-@media (max-width: 700px) {
-  /* line 582, style.sass */
+@media (max-width: 840px) {
+  /* line 580, style.sass */
   ul.vertical-social {
     display: none;
   }
 }
-/* line 601, style.sass */
+/* line 599, style.sass */
 ul.vertical-social.show {
   visibility: visible;
   opacity: 1;
   margin-top: 0;
 }
-/* line 606, style.sass */
+/* line 604, style.sass */
 ul.vertical-social:before {
   position: absolute;
   display: block;
@@ -1231,7 +1227,7 @@ ul.vertical-social:before {
   font-size: 0.7rem;
   padding-top: 5px;
 }
-/* line 624, style.sass */
+/* line 622, style.sass */
 ul.vertical-social li {
   list-style: none;
   width: 100%;
@@ -1240,18 +1236,18 @@ ul.vertical-social li {
   padding: 13px 0;
   border-top: 1px solid #ddd;
 }
-/* line 632, style.sass */
+/* line 630, style.sass */
 ul.vertical-social li:first-child {
   border-top: 0px;
 }
 
-/* line 635, style.sass */
+/* line 633, style.sass */
 h3.orange {
   font-family: "ff-tisa-web-pro";
   color: #FF8E2E;
 }
 
-/* line 639, style.sass */
+/* line 637, style.sass */
 li.cat-item-234 {
   display: none;
 }

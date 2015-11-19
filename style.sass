@@ -295,16 +295,14 @@ aside.sidebar
   @media (max-width: 1000px)
     width: 240px
 
-  @media (max-width: 850px)
+  @media (max-width: 840px)
     width: 200px
 
-  @media (max-width: 750px)
-    display: none
-
   &.hide
-    opacity: 0
-    visibility: hidden
-    top: -20px
+    @media (min-width: 840px)
+      opacity: 0
+      visibility: hidden
+      top: -20px
 
   div[class^="widget_"], div[class*=" widget_"]
     margin-bottom: 35px
@@ -595,7 +593,7 @@ ul.vertical-social
   opacity: 0
   margin-top: -10px
 
-  @media (max-width: 700px)
+  @media (max-width: 840px)
     display: none
 
   &.show
