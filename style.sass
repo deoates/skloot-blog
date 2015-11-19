@@ -279,6 +279,26 @@ header[role="banner"]
       display: none
 
 
+body.single-post
+
+  aside.sidebar
+    @media (max-width: 1000px)
+      display: none
+
+  .graph-bg
+    @media (max-width: 1000px)
+      opacity: .3
+
+  main[role="main"]
+    @media (max-width: 1000px)
+      width: 100%
+      max-width: 640px
+      margin: auto auto
+      padding-left: 0
+      margin-top: 30px
+      clear: both
+      float: none
+
 aside.sidebar
   @include transition(all .4s)
   width: 280px
@@ -299,10 +319,9 @@ aside.sidebar
     width: 200px
 
   &.hide
-    @media (min-width: 840px)
-      opacity: 0
-      visibility: hidden
-      top: -20px
+    opacity: 0
+    visibility: hidden
+    top: -20px
 
   div[class^="widget_"], div[class*=" widget_"]
     margin-bottom: 35px
@@ -423,9 +442,9 @@ h2.post-title
   color: #FF8E2E
   
   @media (max-width: 1000px)
-    font-size: 2rem
+    font-size: 2.3rem
   @media (max-width: 640px)
-    font-size: 1.6rem
+    font-size: 1.9rem
 
   a
     color: #FF8E2E
@@ -600,7 +619,7 @@ ul.vertical-social
   opacity: 0
   margin-top: -10px
 
-  @media (max-width: 840px)
+  @media (max-width: 1000px)
     display: none
 
   &.show
