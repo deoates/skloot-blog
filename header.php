@@ -15,6 +15,7 @@
 
     <link href="<?php bloginfo('template_directory') ?>/style.css" rel="stylesheet">
 
+    <!-- test comment -->
     <script src="https://use.typekit.net/qtl5wlo.js"></script>
     <script>try{Typekit.load({ async: false });}catch(e){}</script>
 
