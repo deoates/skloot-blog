@@ -733,7 +733,7 @@ header[role="banner"] nav li {
 /* line 275, style.sass */
 header[role="banner"] nav a {
   font-family: "Patua One", cursive;
-  font-weight: 700;
+  font-weight: 500;
   color: #454B54;
   padding-left: 20px;
   font-size: 0.925rem;
@@ -835,47 +835,48 @@ aside.sidebar h3 {
   font-size: 0.95rem;
   margin: 10px 0;
   font-family: "Patua One", cursive;
+  font-weight: 500;
   color: #12679C;
 }
-/* line 355, style.sass */
+/* line 356, style.sass */
 aside.sidebar #text-3 h3 {
   font-size: 1.1rem;
   margin: 15px 0;
 }
-/* line 359, style.sass */
+/* line 360, style.sass */
 aside.sidebar img.headshot {
   margin-left: -4px;
   margin-bottom: -16px;
 }
-/* line 365, style.sass */
+/* line 366, style.sass */
 aside.sidebar ul.social li {
   display: inline-block;
   margin-right: 10px;
 }
-/* line 369, style.sass */
+/* line 370, style.sass */
 aside.sidebar ul.social a {
   color: #454B54;
 }
-/* line 371, style.sass */
+/* line 372, style.sass */
 aside.sidebar ul.social i {
   font-size: 1.2rem;
 }
 
-/* line 374, style.sass */
+/* line 375, style.sass */
 main[role="main"] {
   float: right;
   width: calc(100% - 280px);
   padding-left: 60px;
 }
 @media (max-width: 1024px) {
-  /* line 374, style.sass */
+  /* line 375, style.sass */
   main[role="main"] {
     width: calc(100% - 240px);
     padding-left: 40px;
   }
 }
 @media (max-width: 850px) {
-  /* line 374, style.sass */
+  /* line 375, style.sass */
   main[role="main"] {
     width: calc(100% - 200px);
     padding-left: 25px;
@@ -883,7 +884,7 @@ main[role="main"] {
   }
 }
 @media (max-width: 750px) {
-  /* line 374, style.sass */
+  /* line 375, style.sass */
   main[role="main"] {
     width: 100%;
     margin-top: 25px;
@@ -891,7 +892,7 @@ main[role="main"] {
   }
 }
 
-/* line 395, style.sass */
+/* line 396, style.sass */
 article {
   margin-bottom: 60px;
   *zoom: 1;
@@ -904,53 +905,53 @@ article:after {
   display: table;
   clear: both;
 }
-/* line 401, style.sass */
+/* line 402, style.sass */
 article p {
   font-size: 1.1rem;
   line-height: 1.5;
 }
 @media (min-width: 1025px) {
-  /* line 401, style.sass */
+  /* line 402, style.sass */
   article p {
     font-size: 1rem;
   }
 }
-/* line 408, style.sass */
+/* line 409, style.sass */
 article img {
   max-width: 100%;
 }
-/* line 411, style.sass */
+/* line 412, style.sass */
 article span.date {
   font-family: "avenir-black";
   font-size: 0.9rem;
   margin-right: 25px;
 }
 @media (max-width: 850px) {
-  /* line 411, style.sass */
+  /* line 412, style.sass */
   article span.date {
     font-size: 0.85rem;
     margin-right: 12px;
   }
 }
-/* line 420, style.sass */
+/* line 421, style.sass */
 article ul.post-sharing {
   display: inline-block;
   margin: 0;
   padding: 0;
 }
-/* line 425, style.sass */
+/* line 426, style.sass */
 article ul.post-sharing li {
   list-style: none;
   display: inline-block;
   margin-right: 15px;
 }
 @media (max-width: 850px) {
-  /* line 425, style.sass */
+  /* line 426, style.sass */
   article ul.post-sharing li {
     margin-right: 12px;
   }
 }
-/* line 432, style.sass */
+/* line 433, style.sass */
 article ul.post-sharing li span {
   font-family: "avenir-medium";
   opacity: 0.75;
@@ -958,51 +959,52 @@ article ul.post-sharing li span {
   position: relative;
   top: -1px;
 }
-/* line 439, style.sass */
+/* line 440, style.sass */
 article ul.post-sharing li i {
   font-size: 1rem;
 }
 @media (max-width: 850px) {
-  /* line 439, style.sass */
+  /* line 440, style.sass */
   article ul.post-sharing li i {
     font-size: 0.9rem;
   }
 }
-/* line 444, style.sass */
+/* line 445, style.sass */
 article ul.post-sharing li a {
   color: #454B54;
 }
-/* line 446, style.sass */
+/* line 447, style.sass */
 article ul.post-sharing li a:hover {
   color: #12679C;
 }
 
-/* line 449, style.sass */
+/* line 450, style.sass */
 h2.post-title {
   font-family: "Patua One", cursive;
+  font-weight: 500;
   font-size: 2.8rem;
   margin-top: 10px;
   line-height: 1.2;
   color: #FF8E2E;
 }
 @media (max-width: 1024px) {
-  /* line 449, style.sass */
+  /* line 450, style.sass */
   h2.post-title {
     font-size: 2.3rem;
   }
 }
 @media (max-width: 640px) {
-  /* line 449, style.sass */
+  /* line 450, style.sass */
   h2.post-title {
     font-size: 1.9rem;
   }
 }
-/* line 461, style.sass */
+/* line 463, style.sass */
 h2.post-title a {
   color: #FF8E2E;
 }
 
-/* line 464, style.sass */
+/* line 466, style.sass */
 a.more-link {
   -moz-transition: all 0.1s;
   -o-transition: all 0.1s;
@@ -1022,16 +1024,16 @@ a.more-link {
   -webkit-box-shadow: 14px 0 0 white;
   box-shadow: 14px 0 0 white;
 }
-/* line 478, style.sass */
+/* line 480, style.sass */
 a.more-link:hover {
   background: #FF8E2E;
   color: #fff;
 }
-/* line 482, style.sass */
+/* line 484, style.sass */
 a.more-link:hover:after {
   padding-left: 12px;
 }
-/* line 485, style.sass */
+/* line 487, style.sass */
 a.more-link:before {
   display: block;
   content: "";
@@ -1042,7 +1044,7 @@ a.more-link:before {
   position: absolute;
   margin-top: 8px;
 }
-/* line 495, style.sass */
+/* line 497, style.sass */
 a.more-link:after {
   -moz-transition: all 0.2s;
   -o-transition: all 0.2s;
@@ -1055,7 +1057,7 @@ a.more-link:after {
   padding-left: 8px;
 }
 
-/* line 503, style.sass */
+/* line 505, style.sass */
 div.entry-content {
   line-height: 1.55;
   font-size: 1rem;
@@ -1063,47 +1065,47 @@ div.entry-content {
   padding-right: 160px;
 }
 @media (max-width: 1200px) {
-  /* line 503, style.sass */
+  /* line 505, style.sass */
   div.entry-content {
     padding-right: 100px;
   }
 }
 @media (max-width: 1024px) {
-  /* line 503, style.sass */
+  /* line 505, style.sass */
   div.entry-content {
     padding-right: 0;
   }
 }
-/* line 515, style.sass */
+/* line 517, style.sass */
 div.entry-content img.alignright {
   margin-right: -160px;
 }
 @media (max-width: 1200px) {
-  /* line 515, style.sass */
+  /* line 517, style.sass */
   div.entry-content img.alignright {
     margin-right: -100px;
   }
 }
 @media (max-width: 1024px) {
-  /* line 515, style.sass */
+  /* line 517, style.sass */
   div.entry-content img.alignright {
     margin-right: 0;
   }
 }
-/* line 525, style.sass */
+/* line 527, style.sass */
 div.entry-content img.alignright {
   float: right;
   margin-left: 30px;
   margin-bottom: 25px;
 }
-/* line 530, style.sass */
+/* line 532, style.sass */
 div.entry-content img.alignleft {
   float: left;
   margin-right: 30px;
   margin-bottom: 25px;
 }
 @media (max-width: 640px) {
-  /* line 535, style.sass */
+  /* line 537, style.sass */
   div.entry-content img.alignright, div.entry-content img.alignleft {
     float: none;
     clear: both;
@@ -1112,7 +1114,7 @@ div.entry-content img.alignleft {
   }
 }
 
-/* line 542, style.sass */
+/* line 544, style.sass */
 .content-wrapper {
   *zoom: 1;
 }
@@ -1123,7 +1125,7 @@ div.entry-content img.alignleft {
   clear: both;
 }
 
-/* line 545, style.sass */
+/* line 547, style.sass */
 footer {
   width: 100%;
   *zoom: 1;
@@ -1138,13 +1140,13 @@ footer:after {
   display: table;
   clear: both;
 }
-/* line 552, style.sass */
+/* line 554, style.sass */
 footer p {
   margin: 0;
   padding: 0;
 }
 
-/* line 556, style.sass */
+/* line 558, style.sass */
 div.pagination {
   background: #F0F6F7;
   position: relative;
@@ -1153,28 +1155,28 @@ div.pagination {
   padding-top: 4px;
   clear: both;
 }
-/* line 564, style.sass */
+/* line 566, style.sass */
 div.pagination a, div.pagination span {
   color: #454B54;
   font-size: 0.8rem;
 }
-/* line 568, style.sass */
+/* line 570, style.sass */
 div.pagination a {
   font-family: "avenir-black";
 }
-/* line 571, style.sass */
+/* line 573, style.sass */
 div.pagination span {
   font-family: "avenir-roman";
 }
-/* line 574, style.sass */
+/* line 576, style.sass */
 div.pagination a.page-numbers {
   padding: 0 6px;
 }
-/* line 577, style.sass */
+/* line 579, style.sass */
 div.pagination a.page-numbers:hover {
   color: #12679C;
 }
-/* line 580, style.sass */
+/* line 582, style.sass */
 div.pagination a.next, div.pagination a.prev {
   -moz-transition: all 0.2s;
   -o-transition: all 0.2s;
@@ -1192,16 +1194,16 @@ div.pagination a.next, div.pagination a.prev {
   font-size: 0.7rem;
   letter-spacing: 1.5px;
 }
-/* line 594, style.sass */
+/* line 596, style.sass */
 div.pagination a.next:hover, div.pagination a.prev:hover {
   background: #FF8E2E;
   color: #fff;
 }
-/* line 598, style.sass */
+/* line 600, style.sass */
 div.pagination a.next {
   right: 0;
 }
-/* line 600, style.sass */
+/* line 602, style.sass */
 div.pagination a.next:after {
   content: "";
   font-family: "icomoon";
@@ -1209,11 +1211,11 @@ div.pagination a.next:after {
   top: 1px;
   padding-left: 8px;
 }
-/* line 607, style.sass */
+/* line 609, style.sass */
 div.pagination a.prev {
   left: 0;
 }
-/* line 609, style.sass */
+/* line 611, style.sass */
 div.pagination a.prev:before {
   -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
@@ -1227,7 +1229,7 @@ div.pagination a.prev:before {
   top: 1px;
 }
 
-/* line 618, style.sass */
+/* line 620, style.sass */
 ul.vertical-social {
   -moz-transition: all 0.2s;
   -o-transition: all 0.2s;
@@ -1248,18 +1250,18 @@ ul.vertical-social {
   margin-top: -10px;
 }
 @media (max-width: 1024px) {
-  /* line 618, style.sass */
+  /* line 620, style.sass */
   ul.vertical-social {
     display: none;
   }
 }
-/* line 637, style.sass */
+/* line 639, style.sass */
 ul.vertical-social.show {
   visibility: visible;
   opacity: 1;
   margin-top: 0;
 }
-/* line 642, style.sass */
+/* line 644, style.sass */
 ul.vertical-social:before {
   position: absolute;
   display: block;
@@ -1278,7 +1280,7 @@ ul.vertical-social:before {
   font-size: 0.7rem;
   padding-top: 5px;
 }
-/* line 660, style.sass */
+/* line 662, style.sass */
 ul.vertical-social li {
   list-style: none;
   width: 100%;
@@ -1287,18 +1289,19 @@ ul.vertical-social li {
   padding: 13px 0;
   border-top: 1px solid #ddd;
 }
-/* line 668, style.sass */
+/* line 670, style.sass */
 ul.vertical-social li:first-child {
   border-top: 0px;
 }
 
-/* line 671, style.sass */
+/* line 673, style.sass */
 h3.orange {
   font-family: "Patua One", cursive;
+  font-weight: 500;
   color: #FF8E2E;
 }
 
-/* line 675, style.sass */
+/* line 678, style.sass */
 li.cat-item-234 {
   display: none;
 }
