@@ -651,6 +651,7 @@ header[role="banner"] .logo h1 {
   font-family: "Patua One", cursive;
   letter-spacing: -0.75px;
   font-size: 1.4rem;
+  font-weight: 500;
 }
 @media (max-width: 640px) {
   /* line 214, style.sass */
@@ -658,7 +659,7 @@ header[role="banner"] .logo h1 {
     font-size: 1.2rem;
   }
 }
-/* line 224, style.sass */
+/* line 225, style.sass */
 header[role="banner"] .header-search {
   position: relative;
   top: 2px;
@@ -666,12 +667,12 @@ header[role="banner"] .header-search {
   margin-left: 20px;
 }
 @media (max-width: 640px) {
-  /* line 224, style.sass */
+  /* line 225, style.sass */
   header[role="banner"] .header-search {
     display: none;
   }
 }
-/* line 233, style.sass */
+/* line 234, style.sass */
 header[role="banner"] .header-search * {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -680,21 +681,21 @@ header[role="banner"] .header-search * {
   -ms-user-select: none;
   user-select: none;
 }
-/* line 236, style.sass */
+/* line 237, style.sass */
 header[role="banner"] .header-search a {
   cursor: pointer;
 }
-/* line 240, style.sass */
+/* line 241, style.sass */
 header[role="banner"] .header-search.open form {
   top: 35px;
   opacity: 1;
   visibility: visible;
 }
-/* line 245, style.sass */
+/* line 246, style.sass */
 header[role="banner"] .header-search i, header[role="banner"] .header-search form {
   display: inline-block;
 }
-/* line 248, style.sass */
+/* line 249, style.sass */
 header[role="banner"] .header-search form {
   -moz-transition: all 0.1s;
   -o-transition: all 0.1s;
@@ -708,29 +709,29 @@ header[role="banner"] .header-search form {
   visibility: hidden;
   opacity: 0;
 }
-/* line 258, style.sass */
+/* line 259, style.sass */
 header[role="banner"] .header-search form input[type="search"] {
   width: 130px;
 }
-/* line 261, style.sass */
+/* line 262, style.sass */
 header[role="banner"] .header-search i {
   font-size: 1.1rem;
 }
-/* line 264, style.sass */
+/* line 265, style.sass */
 header[role="banner"] nav {
   float: right;
 }
-/* line 267, style.sass */
+/* line 268, style.sass */
 header[role="banner"] nav ul {
   margin: 0;
   padding: 0;
 }
-/* line 271, style.sass */
+/* line 272, style.sass */
 header[role="banner"] nav li {
   list-style: none;
   display: inline-block;
 }
-/* line 275, style.sass */
+/* line 276, style.sass */
 header[role="banner"] nav a {
   font-family: "Patua One", cursive;
   font-weight: 500;
@@ -739,26 +740,26 @@ header[role="banner"] nav a {
   font-size: 0.925rem;
 }
 @media (max-width: 640px) {
-  /* line 264, style.sass */
+  /* line 265, style.sass */
   header[role="banner"] nav {
     display: none;
   }
 }
 
 @media (max-width: 1024px) {
-  /* line 289, style.sass */
+  /* line 290, style.sass */
   body.single-post aside.sidebar {
     display: none;
   }
 }
 @media (max-width: 1024px) {
-  /* line 293, style.sass */
+  /* line 294, style.sass */
   body.single-post .graph-bg {
     opacity: 0.3;
   }
 }
 @media (max-width: 1024px) {
-  /* line 297, style.sass */
+  /* line 298, style.sass */
   body.single-post main[role="main"] {
     width: 100%;
     max-width: 640px;
@@ -770,7 +771,7 @@ header[role="banner"] nav a {
   }
 }
 
-/* line 307, style.sass */
+/* line 308, style.sass */
 aside.sidebar {
   -moz-transition: all 0.4s;
   -o-transition: all 0.4s;
@@ -788,49 +789,49 @@ aside.sidebar {
   top: 0;
 }
 @media (max-width: 1024px) {
-  /* line 307, style.sass */
+  /* line 308, style.sass */
   aside.sidebar {
     width: 240px;
   }
 }
 @media (max-width: 840px) {
-  /* line 307, style.sass */
+  /* line 308, style.sass */
   aside.sidebar {
     width: 200px;
   }
 }
-/* line 326, style.sass */
+/* line 327, style.sass */
 aside.sidebar.hide {
   opacity: 0;
   visibility: hidden;
   top: -20px;
 }
-/* line 331, style.sass */
+/* line 332, style.sass */
 aside.sidebar div[class^="widget_"], aside.sidebar div[class*=" widget_"] {
   margin-bottom: 35px;
 }
-/* line 334, style.sass */
+/* line 335, style.sass */
 aside.sidebar form {
   margin-top: 15px;
 }
-/* line 337, style.sass */
+/* line 338, style.sass */
 aside.sidebar ul {
   margin: 0;
   padding: 0;
 }
-/* line 341, style.sass */
+/* line 342, style.sass */
 aside.sidebar ul li {
   list-style: none;
 }
-/* line 344, style.sass */
+/* line 345, style.sass */
 aside.sidebar ul li a {
   color: #6E7174;
 }
-/* line 346, style.sass */
+/* line 347, style.sass */
 aside.sidebar ul li a:hover {
   color: #12679C;
 }
-/* line 349, style.sass */
+/* line 350, style.sass */
 aside.sidebar h3 {
   font-size: 0.95rem;
   margin: 10px 0;
@@ -838,45 +839,45 @@ aside.sidebar h3 {
   font-weight: 500;
   color: #12679C;
 }
-/* line 356, style.sass */
+/* line 357, style.sass */
 aside.sidebar #text-3 h3 {
   font-size: 1.1rem;
   margin: 15px 0;
 }
-/* line 360, style.sass */
+/* line 361, style.sass */
 aside.sidebar img.headshot {
   margin-left: -4px;
   margin-bottom: -16px;
 }
-/* line 366, style.sass */
+/* line 367, style.sass */
 aside.sidebar ul.social li {
   display: inline-block;
   margin-right: 10px;
 }
-/* line 370, style.sass */
+/* line 371, style.sass */
 aside.sidebar ul.social a {
   color: #454B54;
 }
-/* line 372, style.sass */
+/* line 373, style.sass */
 aside.sidebar ul.social i {
   font-size: 1.2rem;
 }
 
-/* line 375, style.sass */
+/* line 376, style.sass */
 main[role="main"] {
   float: right;
   width: calc(100% - 280px);
   padding-left: 60px;
 }
 @media (max-width: 1024px) {
-  /* line 375, style.sass */
+  /* line 376, style.sass */
   main[role="main"] {
     width: calc(100% - 240px);
     padding-left: 40px;
   }
 }
 @media (max-width: 850px) {
-  /* line 375, style.sass */
+  /* line 376, style.sass */
   main[role="main"] {
     width: calc(100% - 200px);
     padding-left: 25px;
@@ -884,7 +885,7 @@ main[role="main"] {
   }
 }
 @media (max-width: 750px) {
-  /* line 375, style.sass */
+  /* line 376, style.sass */
   main[role="main"] {
     width: 100%;
     margin-top: 25px;
@@ -892,7 +893,7 @@ main[role="main"] {
   }
 }
 
-/* line 396, style.sass */
+/* line 397, style.sass */
 article {
   margin-bottom: 60px;
   *zoom: 1;
@@ -905,53 +906,53 @@ article:after {
   display: table;
   clear: both;
 }
-/* line 402, style.sass */
+/* line 403, style.sass */
 article p {
   font-size: 1.1rem;
   line-height: 1.5;
 }
 @media (min-width: 1025px) {
-  /* line 402, style.sass */
+  /* line 403, style.sass */
   article p {
     font-size: 1rem;
   }
 }
-/* line 409, style.sass */
+/* line 410, style.sass */
 article img {
   max-width: 100%;
 }
-/* line 412, style.sass */
+/* line 413, style.sass */
 article span.date {
   font-family: "avenir-black";
   font-size: 0.9rem;
   margin-right: 25px;
 }
 @media (max-width: 850px) {
-  /* line 412, style.sass */
+  /* line 413, style.sass */
   article span.date {
     font-size: 0.85rem;
     margin-right: 12px;
   }
 }
-/* line 421, style.sass */
+/* line 422, style.sass */
 article ul.post-sharing {
   display: inline-block;
   margin: 0;
   padding: 0;
 }
-/* line 426, style.sass */
+/* line 427, style.sass */
 article ul.post-sharing li {
   list-style: none;
   display: inline-block;
   margin-right: 15px;
 }
 @media (max-width: 850px) {
-  /* line 426, style.sass */
+  /* line 427, style.sass */
   article ul.post-sharing li {
     margin-right: 12px;
   }
 }
-/* line 433, style.sass */
+/* line 434, style.sass */
 article ul.post-sharing li span {
   font-family: "avenir-medium";
   opacity: 0.75;
@@ -959,26 +960,26 @@ article ul.post-sharing li span {
   position: relative;
   top: -1px;
 }
-/* line 440, style.sass */
+/* line 441, style.sass */
 article ul.post-sharing li i {
   font-size: 1rem;
 }
 @media (max-width: 850px) {
-  /* line 440, style.sass */
+  /* line 441, style.sass */
   article ul.post-sharing li i {
     font-size: 0.9rem;
   }
 }
-/* line 445, style.sass */
+/* line 446, style.sass */
 article ul.post-sharing li a {
   color: #454B54;
 }
-/* line 447, style.sass */
+/* line 448, style.sass */
 article ul.post-sharing li a:hover {
   color: #12679C;
 }
 
-/* line 450, style.sass */
+/* line 451, style.sass */
 h2.post-title {
   font-family: "Patua One", cursive;
   font-weight: 500;
@@ -988,23 +989,23 @@ h2.post-title {
   color: #FF8E2E;
 }
 @media (max-width: 1024px) {
-  /* line 450, style.sass */
+  /* line 451, style.sass */
   h2.post-title {
     font-size: 2.3rem;
   }
 }
 @media (max-width: 640px) {
-  /* line 450, style.sass */
+  /* line 451, style.sass */
   h2.post-title {
     font-size: 1.9rem;
   }
 }
-/* line 463, style.sass */
+/* line 464, style.sass */
 h2.post-title a {
   color: #FF8E2E;
 }
 
-/* line 466, style.sass */
+/* line 467, style.sass */
 a.more-link {
   -moz-transition: all 0.1s;
   -o-transition: all 0.1s;
@@ -1024,16 +1025,16 @@ a.more-link {
   -webkit-box-shadow: 14px 0 0 white;
   box-shadow: 14px 0 0 white;
 }
-/* line 480, style.sass */
+/* line 481, style.sass */
 a.more-link:hover {
   background: #FF8E2E;
   color: #fff;
 }
-/* line 484, style.sass */
+/* line 485, style.sass */
 a.more-link:hover:after {
   padding-left: 12px;
 }
-/* line 487, style.sass */
+/* line 488, style.sass */
 a.more-link:before {
   display: block;
   content: "";
@@ -1044,7 +1045,7 @@ a.more-link:before {
   position: absolute;
   margin-top: 8px;
 }
-/* line 497, style.sass */
+/* line 498, style.sass */
 a.more-link:after {
   -moz-transition: all 0.2s;
   -o-transition: all 0.2s;
@@ -1057,7 +1058,7 @@ a.more-link:after {
   padding-left: 8px;
 }
 
-/* line 505, style.sass */
+/* line 506, style.sass */
 div.entry-content {
   line-height: 1.55;
   font-size: 1rem;
@@ -1065,47 +1066,47 @@ div.entry-content {
   padding-right: 160px;
 }
 @media (max-width: 1200px) {
-  /* line 505, style.sass */
+  /* line 506, style.sass */
   div.entry-content {
     padding-right: 100px;
   }
 }
 @media (max-width: 1024px) {
-  /* line 505, style.sass */
+  /* line 506, style.sass */
   div.entry-content {
     padding-right: 0;
   }
 }
-/* line 517, style.sass */
+/* line 518, style.sass */
 div.entry-content img.alignright {
   margin-right: -160px;
 }
 @media (max-width: 1200px) {
-  /* line 517, style.sass */
+  /* line 518, style.sass */
   div.entry-content img.alignright {
     margin-right: -100px;
   }
 }
 @media (max-width: 1024px) {
-  /* line 517, style.sass */
+  /* line 518, style.sass */
   div.entry-content img.alignright {
     margin-right: 0;
   }
 }
-/* line 527, style.sass */
+/* line 528, style.sass */
 div.entry-content img.alignright {
   float: right;
   margin-left: 30px;
   margin-bottom: 25px;
 }
-/* line 532, style.sass */
+/* line 533, style.sass */
 div.entry-content img.alignleft {
   float: left;
   margin-right: 30px;
   margin-bottom: 25px;
 }
 @media (max-width: 640px) {
-  /* line 537, style.sass */
+  /* line 538, style.sass */
   div.entry-content img.alignright, div.entry-content img.alignleft {
     float: none;
     clear: both;
@@ -1114,7 +1115,7 @@ div.entry-content img.alignleft {
   }
 }
 
-/* line 544, style.sass */
+/* line 545, style.sass */
 .content-wrapper {
   *zoom: 1;
 }
@@ -1125,7 +1126,7 @@ div.entry-content img.alignleft {
   clear: both;
 }
 
-/* line 547, style.sass */
+/* line 548, style.sass */
 footer {
   width: 100%;
   *zoom: 1;
@@ -1140,13 +1141,13 @@ footer:after {
   display: table;
   clear: both;
 }
-/* line 554, style.sass */
+/* line 555, style.sass */
 footer p {
   margin: 0;
   padding: 0;
 }
 
-/* line 558, style.sass */
+/* line 559, style.sass */
 div.pagination {
   background: #F0F6F7;
   position: relative;
@@ -1155,28 +1156,28 @@ div.pagination {
   padding-top: 4px;
   clear: both;
 }
-/* line 566, style.sass */
+/* line 567, style.sass */
 div.pagination a, div.pagination span {
   color: #454B54;
   font-size: 0.8rem;
 }
-/* line 570, style.sass */
+/* line 571, style.sass */
 div.pagination a {
   font-family: "avenir-black";
 }
-/* line 573, style.sass */
+/* line 574, style.sass */
 div.pagination span {
   font-family: "avenir-roman";
 }
-/* line 576, style.sass */
+/* line 577, style.sass */
 div.pagination a.page-numbers {
   padding: 0 6px;
 }
-/* line 579, style.sass */
+/* line 580, style.sass */
 div.pagination a.page-numbers:hover {
   color: #12679C;
 }
-/* line 582, style.sass */
+/* line 583, style.sass */
 div.pagination a.next, div.pagination a.prev {
   -moz-transition: all 0.2s;
   -o-transition: all 0.2s;
@@ -1194,16 +1195,16 @@ div.pagination a.next, div.pagination a.prev {
   font-size: 0.7rem;
   letter-spacing: 1.5px;
 }
-/* line 596, style.sass */
+/* line 597, style.sass */
 div.pagination a.next:hover, div.pagination a.prev:hover {
   background: #FF8E2E;
   color: #fff;
 }
-/* line 600, style.sass */
+/* line 601, style.sass */
 div.pagination a.next {
   right: 0;
 }
-/* line 602, style.sass */
+/* line 603, style.sass */
 div.pagination a.next:after {
   content: "";
   font-family: "icomoon";
@@ -1211,11 +1212,11 @@ div.pagination a.next:after {
   top: 1px;
   padding-left: 8px;
 }
-/* line 609, style.sass */
+/* line 610, style.sass */
 div.pagination a.prev {
   left: 0;
 }
-/* line 611, style.sass */
+/* line 612, style.sass */
 div.pagination a.prev:before {
   -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
@@ -1229,7 +1230,7 @@ div.pagination a.prev:before {
   top: 1px;
 }
 
-/* line 620, style.sass */
+/* line 621, style.sass */
 ul.vertical-social {
   -moz-transition: all 0.2s;
   -o-transition: all 0.2s;
@@ -1250,18 +1251,18 @@ ul.vertical-social {
   margin-top: -10px;
 }
 @media (max-width: 1024px) {
-  /* line 620, style.sass */
+  /* line 621, style.sass */
   ul.vertical-social {
     display: none;
   }
 }
-/* line 639, style.sass */
+/* line 640, style.sass */
 ul.vertical-social.show {
   visibility: visible;
   opacity: 1;
   margin-top: 0;
 }
-/* line 644, style.sass */
+/* line 645, style.sass */
 ul.vertical-social:before {
   position: absolute;
   display: block;
@@ -1280,7 +1281,7 @@ ul.vertical-social:before {
   font-size: 0.7rem;
   padding-top: 5px;
 }
-/* line 662, style.sass */
+/* line 663, style.sass */
 ul.vertical-social li {
   list-style: none;
   width: 100%;
@@ -1289,19 +1290,19 @@ ul.vertical-social li {
   padding: 13px 0;
   border-top: 1px solid #ddd;
 }
-/* line 670, style.sass */
+/* line 671, style.sass */
 ul.vertical-social li:first-child {
   border-top: 0px;
 }
 
-/* line 673, style.sass */
+/* line 674, style.sass */
 h3.orange {
   font-family: "Patua One", cursive;
   font-weight: 500;
   color: #FF8E2E;
 }
 
-/* line 678, style.sass */
+/* line 679, style.sass */
 li.cat-item-234 {
   display: none;
 }
